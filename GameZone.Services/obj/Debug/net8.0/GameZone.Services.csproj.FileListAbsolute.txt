@@ -1,0 +1,17 @@
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\bin\Debug\net8.0\GameZone.Services.deps.json
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\bin\Debug\net8.0\GameZone.Services.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\bin\Debug\net8.0\GameZone.Services.pdb
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\bin\Debug\net8.0\GameZone.Core.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\bin\Debug\net8.0\GameZone.Repository.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\bin\Debug\net8.0\GameZone.Repository.pdb
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\bin\Debug\net8.0\GameZone.Core.pdb
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.csproj.AssemblyReference.cache
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.AssemblyInfoInputs.cache
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.AssemblyInfo.cs
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.csproj.CoreCompileInputs.cache
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.28C2A367.Up2Date
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\refint\GameZone.Services.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.pdb
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\ref\GameZone.Services.dll

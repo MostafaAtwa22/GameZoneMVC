@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7687F13-5D3B-4415-A6C6-58083CB74469}|GameZone.MVC.csproj|d:\\programming\\backend\\mvc projects\\gamezone(mvc)\\gamezone.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7687F13-5D3B-4415-A6C6-58083CB74469}|GameZone.MVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5AA74A-A001-4847-A722-622DC45BB5E3}|..\\GameZone.Services\\GameZone.Services.csproj|d:\\programming\\backend\\mvc projects\\gamezone(mvc)\\gamezone.services\\services\\gamesservices\\gamesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7687F13-5D3B-4415-A6C6-58083CB74469}|GameZone.MVC.csproj|d:\\programming\\backend\\mvc projects\\gamezone(mvc)\\gamezone.mvc\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7687F13-5D3B-4415-A6C6-58083CB74469}|GameZone.MVC.csproj|solutionrelative:controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T12:55:12.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
+              "ToolTip": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "Controllers\\GamesController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAtwGcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T12:34:08.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GamesServices.cs",
+              "DocumentMoniker": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\Services\\GamesServices\\GamesServices.cs",
+              "RelativeDocumentMoniker": "..\\GameZone.Services\\Services\\GamesServices\\GamesServices.cs",
+              "ToolTip": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\Services\\GamesServices\\GamesServices.cs",
+              "RelativeToolTip": "..\\GameZone.Services\\Services\\GamesServices\\GamesServices.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAYwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T12:33:38.512Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

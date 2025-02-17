@@ -1,0 +1,12 @@
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\bin\Debug\net8.0\GameZone.Core.deps.json
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\bin\Debug\net8.0\GameZone.Core.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\bin\Debug\net8.0\GameZone.Core.pdb
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.AssemblyInfoInputs.cache
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.AssemblyInfo.cs
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.csproj.CoreCompileInputs.cache
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\refint\GameZone.Core.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.pdb
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\ref\GameZone.Core.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.csproj.AssemblyReference.cache
