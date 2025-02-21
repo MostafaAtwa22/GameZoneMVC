@@ -151,7 +151,7 @@ namespace GameZone.MVC.Controllers
                     {
                         List<Claim> claims = new List<Claim>
                         {
-                            new Claim("Image", user.Image),
+                            new Claim("Cover", user.Cover!),
                             new Claim("Country", user.Country),
                             new Claim("City", user.City)
                         };

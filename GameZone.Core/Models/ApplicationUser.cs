@@ -11,6 +11,6 @@ namespace GameZone.Core.Models
         [Required]
         public string City { get; set; } = string.Empty;
 
-        public string? Image { get; set; } = string.Empty;
+        public string? Cover { get; set; } = string.Empty;
     }
 }

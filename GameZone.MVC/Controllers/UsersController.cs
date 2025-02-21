@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
 namespace GameZone.MVC.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -12,6 +14,7 @@ namespace GameZone.MVC.Controllers
             _context = context;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             var claminIdentity = (ClaimsIdentity)User.Identity!;
@@ -24,6 +27,7 @@ namespace GameZone.MVC.Controllers
                 .ToList());
         }
 
+        [HttpGet]
         public IActionResult LockUnLock(string? id)
         {
             var user = _context.ApplicationUsers
