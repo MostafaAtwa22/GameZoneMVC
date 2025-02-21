@@ -1,8 +1,11 @@
+using GameZone.Core.Models;
 using GameZone.Repository.Interceptors;
 using GameZone.Services.Helper;
 using GameZone.Services.Services.CategoriesServices;
 using GameZone.Services.Services.DevicesServices;
+using GameZone.Services.Services.EmailServices;
 using GameZone.Services.Services.GamesServices;
+using Microsoft.AspNetCore.Identity;
 
 namespace GameZone.MVC
 {
@@ -23,11 +26,28 @@ namespace GameZone.MVC
                 .AddInterceptors(new SoftDeleteInterceptor());
             });
 
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>
+            (
+                    option =>
+                    {
+                        option.Password.RequiredLength = 8;
+                        option.Password.RequireUppercase = true;
+                        option.Password.RequireLowercase = true;
+                        option.Password.RequireNonAlphanumeric = true;
+                    }
+            ).AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+
+            builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+
             builder.Services.AddAutoMapper(typeof(MappingProfile));
+            builder.Services.AddTransient<IEmailSettings, EmailSettings>();
+
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IGamesServices, GamesServices>();
             builder.Services.AddScoped<IDevicesServices, DevicesServices>();
             builder.Services.AddScoped<ICategoriesServices, CategoriesServices>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -43,6 +63,7 @@ namespace GameZone.MVC
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

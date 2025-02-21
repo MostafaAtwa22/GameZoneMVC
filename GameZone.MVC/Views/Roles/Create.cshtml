@@ -1,0 +1,37 @@
+﻿@model CreateRoleVM
+
+@{
+    ViewData["Title"] = "Add Role";
+}
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4 w-50 border-success">
+        <div class="card-body">
+            <h5 class="text-center fw-bold text-success">
+                <i class="bi bi-plus-circle-dotted"></i>
+                Add a New Role
+            </h5>
+
+            <form asp-controller="Roles">
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label fw-semibold"></label>
+                    <input type="text" class="form-control rounded-3 shadow-sm" asp-for="Name" placeholder="Enter Role Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-outline-success px-4 rounded-pill">
+                        <i class="bi bi-check-circle"></i> Submit
+                    </button>
+                    <a asp-action="Index" class="btn btn-outline-secondary px-4 rounded-pill">
+                        <i class="bi bi-arrow-left"></i> Back
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

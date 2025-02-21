@@ -10,3 +10,4 @@ D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.pdb
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\ref\GameZone.Core.dll
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.csproj.AssemblyReference.cache
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.sourcelink.json

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<RoleDetails>
+
+@{
+    ViewData["Title"] = "Roles Management";
+}
+
+<!-- Optional: Inline CSS for custom borders -->
+<style>
+    /* Custom border style for the table */
+    .custom-table {
+        border: 2px solid #343a40; /* Dark border around the table */
+    }
+    /* Custom borders for table cells */
+    .custom-table th,
+    .custom-table td {
+        border: 1px solid #dee2e6;
+    }
+    .custom-table th {
+        color: black;
+        font-size: 20px;
+        text-style; bold;
+    }
+</style>
+
+<a class="btn btn-outline-secondary btn-lg mt-4" asp-action="Create">
+    <i class="bi bi-patch-plus"></i>
+    Add Role
+</a>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-danger mt-5 text-center">
+        <h4 class="alert-heading">No Roles!</h4>
+        <p>No Roles have been added yet.</p>
+    </div>
+}
+else
+{
+    <div class="container mt-4">
+        <h2 class="text-center mb-4 fw-bold">Roles Management <i class="bi bi-database-fill"></i></h2>
+        <div class="table-responsive shadow-sm rounded">
+            <table class="table table-hover align-middle text-center bg-light border-success rounded custom-table">
+                <thead class="bg-dark text-white">
+                    <tr>
+                        <th>Id</th>
+                        <th>Role Name</th>
+                        <th>Total Users</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var role in Model)
+                    {
+                        <tr>
+                            <td>@role.Id</td>
+                            <td class="fw-semibold">@role.Name</td>
+                            <td class="fw-bold text-primary">@role.TotalUsers</td>
+                            <td>
+                                <a href="javascript:;" class="btn btn-danger rounded rounded-3 js-delete" data-id="@role.Id">
+                                    <i class="bi bi-trash3"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script src="~/js/role-index.js"></script>
+}

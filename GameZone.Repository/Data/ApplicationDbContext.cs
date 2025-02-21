@@ -17,6 +17,7 @@ namespace GameZone.Repository.Data
         public DbSet<Category>  Categories { get; set; }
         public DbSet<Device>  Devices { get; set; }
         public DbSet<GameDevice> GameDevices { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

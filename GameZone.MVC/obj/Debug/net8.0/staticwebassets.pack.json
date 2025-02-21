@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\GameZone.MVC.l92q3ogfw9.bundle.scp.css"
     },
     {
+      "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\GameZone.jpg",
+      "PackagePath": "staticwebassets\\GameZone.jpg"
+    },
+    {
       "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\1acaa086-3d78-4407-8904-f1ceb8cb722a.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\games\\1acaa086-3d78-4407-8904-f1ceb8cb722a.jpeg"
     },
@@ -13,12 +17,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\games\\1f404995-3727-4f9f-a48c-513d62473f8e.jpeg"
     },
     {
+      "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\3d5ac2c2-fc98-4c4d-8b5d-6ced9d80ee6c.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\games\\3d5ac2c2-fc98-4c4d-8b5d-6ced9d80ee6c.jpeg"
+    },
+    {
       "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\4aabaf75-dd2b-4153-b19a-7d1fc1b2a086.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\games\\4aabaf75-dd2b-4153-b19a-7d1fc1b2a086.jpeg"
     },
     {
-      "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\8c5be8a4-17c8-4eb2-8cbc-3affeed23ce5.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\games\\8c5be8a4-17c8-4eb2-8cbc-3affeed23ce5.jpg"
+      "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\774f0126-2ba9-402f-9088-70092065217a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\games\\774f0126-2ba9-402f-9088-70092065217a.jpg"
     },
     {
       "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\9eafb5c3-64f8-4589-99d4-c7146abda0cd.jpg",
@@ -37,16 +45,8 @@
       "PackagePath": "staticwebassets\\assets\\img\\games\\bb5b058a-fba9-4b2e-b7de-6a7c770d84ae.jpeg"
     },
     {
-      "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\c25fb7ec-d8ed-49be-94f6-e601c4f900fb.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\games\\c25fb7ec-d8ed-49be-94f6-e601c4f900fb.jpeg"
-    },
-    {
       "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\d29341b7-74aa-41e4-920c-787798055e37.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\games\\d29341b7-74aa-41e4-920c-787798055e37.jpeg"
-    },
-    {
-      "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\games\\ed6d9378-0762-4528-b578-4527ce4d0756.jpeg",
-      "PackagePath": "staticwebassets\\assets\\img\\games\\ed6d9378-0762-4528-b578-4527ce4d0756.jpeg"
     },
     {
       "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\bootstrap-icons\\bootstrap-icons.svg",
@@ -97,8 +97,16 @@
       "PackagePath": "staticwebassets\\js\\games-index.js"
     },
     {
+      "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\js\\role-index.js",
+      "PackagePath": "staticwebassets\\js\\role-index.js"
+    },
+    {
       "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\js\\user-index.js",
+      "PackagePath": "staticwebassets\\js\\user-index.js"
     },
     {
       "Id": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",

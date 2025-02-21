@@ -2,15 +2,19 @@
 using GameZone.Services.Services.DevicesServices;
 using GameZone.Services.Services.GamesServices;
 using GameZone.Services.ViewModels.GamesVM;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameZone.MVC.Controllers
 {
+   
     public class GamesController : Controller
     {
         private readonly IGamesServices _gamesServices;
         private readonly ICategoriesServices _categoriesServices;
         private readonly IDevicesServices _devicesServices;
+        
 
         public GamesController(IGamesServices gamesServices, 
             ICategoriesServices categoriesServices,
@@ -22,6 +26,7 @@ namespace GameZone.MVC.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             var games = await _gamesServices.GetAll();
@@ -29,6 +34,8 @@ namespace GameZone.MVC.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
+        [Authorize(Roles = "Admin, User")]
         public async Task<IActionResult> Details(int id)
         {
             var game = await _gamesServices.GetById(id);
@@ -40,6 +47,7 @@ namespace GameZone.MVC.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create()
         {
             var model = new CreateGameVM
@@ -52,6 +60,7 @@ namespace GameZone.MVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create(CreateGameVM model)
         {
             if (!ModelState.IsValid)
@@ -67,6 +76,7 @@ namespace GameZone.MVC.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(int id)
         {
             var game = await _gamesServices.GetById(id);
@@ -91,6 +101,7 @@ namespace GameZone.MVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(EditGameVM model)
         {
             if (!ModelState.IsValid)
@@ -110,6 +121,7 @@ namespace GameZone.MVC.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var game = await _gamesServices.Delete(id);

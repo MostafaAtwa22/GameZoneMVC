@@ -13,3 +13,4 @@ D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\net8.0\refint\GameZone.Repository.dll
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.pdb
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\net8.0\ref\GameZone.Repository.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.sourcelink.json

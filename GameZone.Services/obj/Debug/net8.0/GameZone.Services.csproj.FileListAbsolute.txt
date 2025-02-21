@@ -15,3 +15,4 @@ D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\ne
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\refint\GameZone.Services.dll
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.pdb
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\ref\GameZone.Services.dll
+D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.sourcelink.json

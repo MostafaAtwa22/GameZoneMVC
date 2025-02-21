@@ -1,3 +1,0 @@
-D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.MVC\wwwroot\assets\img\games\8c5be8a4-17c8-4eb2-8cbc-3affeed23ce5.jpg
-D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.MVC\wwwroot\assets\img\games\c25fb7ec-d8ed-49be-94f6-e601c4f900fb.jpeg
-D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.MVC\wwwroot\assets\img\games\ed6d9378-0762-4528-b578-4527ce4d0756.jpeg
