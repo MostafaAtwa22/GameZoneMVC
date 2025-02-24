@@ -1,14 +1,10 @@
 ﻿using GameZone.Core.Models;
 using GameZone.Services.Services.EmailServices;
 using GameZone.Services.ViewModels.AccountVM;
-using GameZone.Services.ViewModels.RolesVM;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using NuGet.Common;
 using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Web.WebPages;
 
 namespace GameZone.MVC.Controllers
 {
@@ -31,6 +27,18 @@ namespace GameZone.MVC.Controllers
             _configuration = configuration;
             _emailSettings = emailSettings;
             _roleManager = roleManager;
+        }
+
+        private async Task PopulateRoles(RegisterUserMV viewModel)
+        {
+            viewModel.RolesList = await _roleManager.Roles
+                .OrderBy(c => c.Name)
+                .Select(c => new SelectListItem
+                {
+                    Value = c.Id,
+                    Text = c.Name
+                })
+                .ToListAsync();
         }
 
         [HttpGet]
@@ -56,14 +64,7 @@ namespace GameZone.MVC.Controllers
         {
             if (!ModelState.IsValid)
             {
-                viewModel.RolesList = await _roleManager.Roles
-                    .OrderBy(c => c.Name)
-                    .Select(c => new SelectListItem
-                    {
-                        Value = c.Id,
-                        Text = c.Name
-                    })
-                    .ToListAsync();
+                await PopulateRoles(viewModel);
                 return View(viewModel);
             }
 
@@ -75,55 +76,35 @@ namespace GameZone.MVC.Controllers
 
             if (!ModelState.IsValid)
             {
-                viewModel.RolesList = await _roleManager.Roles
-                    .OrderBy(c => c.Name)
-                    .Select(c => new SelectListItem
-                    {
-                        Value = c.Id,
-                        Text = c.Name
-                    })
-                    .ToListAsync();
+                await PopulateRoles(viewModel);
                 return View(viewModel);
             }
 
-            ApplicationUser user = new()
+            var user = new ApplicationUser
             {
                 UserName = viewModel.UserName,
                 Email = viewModel.Email,
                 PhoneNumber = viewModel.PhoneNumber,
-                Country = viewModel.Country, 
-                City = viewModel.City        
+                Country = viewModel.Country,
+                City = viewModel.City
             };
 
             var result = await _userManager.CreateAsync(user, viewModel.Password);
 
-            if (result.Succeeded)
+            if (!result.Succeeded)
             {
-                var role = await _roleManager.FindByIdAsync(viewModel.RoleId!);
-                string roleType = "User";
+                foreach (var error in result.Errors)
+                    ModelState.AddModelError(string.Empty, error.Description);
 
-                if (role is not null)
-                    roleType = role.Name!;
-
-                await _userManager.AddToRoleAsync(user, roleType);
-                await _signInManager.SignInAsync(user, isPersistent: false);
-
-                return RedirectToAction(nameof(Index), "Home");
+                await PopulateRoles(viewModel);
+                return View(viewModel);
             }
 
-            foreach (var error in result.Errors)
-                ModelState.AddModelError(string.Empty, error.Description);
+            var role = await _roleManager.FindByIdAsync(viewModel.RoleId!) ?? new IdentityRole("User");
+            await _userManager.AddToRoleAsync(user, role.Name!);
+            await _signInManager.SignInAsync(user, isPersistent: false);
 
-            viewModel.RolesList = await _roleManager.Roles
-                .OrderBy(c => c.Name)
-                .Select(c => new SelectListItem
-                {
-                    Value = c.Id,
-                    Text = c.Name
-                })
-                .ToListAsync();
-
-            return View(viewModel);
+            return RedirectToAction(nameof(Index), "Home");
         }
 
         [HttpGet]
@@ -136,35 +117,51 @@ namespace GameZone.MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginUserVM viewModel)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+                return View(viewModel);
+
+            var user = await _userManager.FindByEmailAsync(viewModel.UserNameOrEmail)
+                       ?? await _userManager.FindByNameAsync(viewModel.UserNameOrEmail);
+
+            if (user is null)
             {
-                var user = await _userManager.FindByEmailAsync(viewModel.UserNameOrEmail);
-
-                if (user == null)
-                    user = await _userManager.FindByNameAsync(viewModel.UserNameOrEmail);
-
-                if (user is not null)
-                {
-                    bool found = await _userManager.CheckPasswordAsync(user, viewModel.Password);
-
-                    if (found)
-                    {
-                        List<Claim> claims = new List<Claim>
-                        {
-                            new Claim("Cover", user.Cover!),
-                            new Claim("Country", user.Country),
-                            new Claim("City", user.City)
-                        };
-
-                        await _signInManager.SignInWithClaimsAsync(user, viewModel.RememberMe, claims);
-                        return RedirectToAction(nameof(Index), "Home");
-                    }
-                }
-
                 ModelState.AddModelError(string.Empty, "Invalid username or password!");
+                return View(viewModel);
             }
+
+            if (await _userManager.IsLockedOutAsync(user))
+            {
+                ModelState.AddModelError(string.Empty, "Your account is locked. Try again later.");
+                return View(viewModel);
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(user, viewModel.Password, 
+                viewModel.RememberMe,
+                lockoutOnFailure: true);
+
+            if (result.Succeeded)
+            {
+                await _userManager.ResetAccessFailedCountAsync(user);
+
+                List<Claim> claims = new List<Claim>
+                {
+                    new Claim("Cover", user.Cover!),
+                    new Claim("Country", user.Country),
+                    new Claim("City", user.City)
+                };
+
+                await _signInManager.SignInWithClaimsAsync(user, viewModel.RememberMe, claims);
+                return RedirectToAction(nameof(Index), "Home");
+            }
+
+            if (result.IsLockedOut)
+                ModelState.AddModelError(string.Empty, "Your account has been locked due to multiple failed attempts. Try again later.");
+            else
+                ModelState.AddModelError(string.Empty, "Invalid username or password!");
+
             return View(viewModel);
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Logout()
@@ -179,6 +176,8 @@ namespace GameZone.MVC.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> SendEmail(ForgetPasswordVM viewModel)
         {
             if (ModelState.IsValid)

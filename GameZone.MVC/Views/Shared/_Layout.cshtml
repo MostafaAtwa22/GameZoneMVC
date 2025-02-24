@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -56,24 +59,31 @@
                         }
                     </ul>
                     <ul class="navbar-nav">
-                        @if (!(User!.Identity!.IsAuthenticated))
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            var user = await UserManager.GetUserAsync(User);
+                            // Set a default cover image if no cover is set
+                            string coverUrl = string.IsNullOrEmpty(user?.Cover)
+                            ? Url.Content("~/GameZone.jpg")
+                            : Url.Content($"{FileSettings.ImagesPath}/users/{user.Cover}");
+                            <li class="nav-item">
+                                <a class="navbar-brand" asp-controller="Manage" asp-action="Index">
+                                    <img src="@coverUrl" class="rounded-circle border border-2 shadow-sm nav-logo" width="40" height="40" alt="User Cover">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger fw-bold logout-btn" asp-controller="Account" asp-action="Logout">
+                                    Log out <i class="bi bi-door-open-fill"></i>
+                                </a>
+                            </li>
+                        }
+                        else
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark fw-bold" asp-controller="Account" asp-action="Login">Login</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark fw-bold" asp-controller="Account" asp-action="Register">Register</a>
-                            </li>
-                        }
-                        else
-                        {
-                            <li class="nav-item">
-                                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                                    <img src="~/GameZone.jpg" class="rounded-circle border border-2 shadow-sm nav-logo" width="40" height="40" alt="GameZone Logo">
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-danger fw-bold logout-btn" asp-controller="Account" asp-action="Logout">Log out <i class="bi bi-door-open-fill"></i></a>
                             </li>
                         }
                     </ul>

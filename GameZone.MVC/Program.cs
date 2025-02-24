@@ -5,6 +5,7 @@ using GameZone.Services.Services.CategoriesServices;
 using GameZone.Services.Services.DevicesServices;
 using GameZone.Services.Services.EmailServices;
 using GameZone.Services.Services.GamesServices;
+using GameZone.Services.Services.ManageServices;
 using Microsoft.AspNetCore.Identity;
 
 namespace GameZone.MVC
@@ -24,6 +25,12 @@ namespace GameZone.MVC
             {
                 option.UseSqlServer(constr)
                 .AddInterceptors(new SoftDeleteInterceptor());
+            });
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.ExpireTimeSpan = TimeSpan.FromDays(30);  
+                options.SlidingExpiration = true;              
+                options.Cookie.HttpOnly = true;
             });
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>
@@ -45,6 +52,7 @@ namespace GameZone.MVC
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IGamesServices, GamesServices>();
+            builder.Services.AddScoped<IManageServices, ManageServices>();
             builder.Services.AddScoped<IDevicesServices, DevicesServices>();
             builder.Services.AddScoped<ICategoriesServices, CategoriesServices>();
 

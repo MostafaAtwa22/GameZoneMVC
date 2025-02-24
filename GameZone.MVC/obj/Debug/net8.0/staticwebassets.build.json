@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XJgJLCzkog47g7CCHIruwWiery/622R8KAbN+qkCUsc=",
+  "Hash": "P9KH8WQkOhDMpPcBXqxcIu6DbCbPp6DxA4y25xbL7Sg=",
   "Source": "GameZone.MVC",
   "BasePath": "_content/GameZone.MVC",
   "Mode": "Default",
@@ -267,6 +267,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\games\\d29341b7-74aa-41e4-920c-787798055e37.jpeg"
+    },
+    {
+      "Identity": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\users\\9abfc85c-981f-429b-a9c5-ed631e360955.jpeg",
+      "SourceId": "GameZone.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\",
+      "BasePath": "_content/GameZone.MVC",
+      "RelativePath": "assets/img/users/9abfc85c-981f-429b-a9c5-ed631e360955#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rz13kua50l",
+      "Integrity": "19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\users\\9abfc85c-981f-429b-a9c5-ed631e360955.jpeg"
+    },
+    {
+      "Identity": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\users\\a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg",
+      "SourceId": "GameZone.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\",
+      "BasePath": "_content/GameZone.MVC",
+      "RelativePath": "assets/img/users/a62b0bb8-a92e-4a65-9d38-171296d628a0#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rz13kua50l",
+      "Integrity": "19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\users\\a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg"
     },
     {
       "Identity": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\bootstrap-icons\\bootstrap-icons.svg",
@@ -2704,6 +2746,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-NfhtX8LdaNDvjYrFJkiYic2+lCJwv7ztPcgWm7eR+l0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/users/9abfc85c-981f-429b-a9c5-ed631e360955.jpeg",
+      "AssetFile": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\users\\9abfc85c-981f-429b-a9c5-ed631e360955.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:32:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/users/9abfc85c-981f-429b-a9c5-ed631e360955.rz13kua50l.jpeg",
+      "AssetFile": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\users\\9abfc85c-981f-429b-a9c5-ed631e360955.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:32:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rz13kua50l"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/users/9abfc85c-981f-429b-a9c5-ed631e360955.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/users/a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg",
+      "AssetFile": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\users\\a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 15:10:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/users/a62b0bb8-a92e-4a65-9d38-171296d628a0.rz13kua50l.jpeg",
+      "AssetFile": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\wwwroot\\assets\\img\\users\\a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 15:10:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rz13kua50l"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/users/a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-19ijJHLlA2IPmNGsUcGQqwEpujD43gq97ckAukyXF04="
         }
       ]
     },

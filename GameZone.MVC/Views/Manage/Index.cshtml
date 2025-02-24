@@ -1,0 +1,194 @@
+﻿@model UpdateProfileVM
+@{
+    ViewData["Title"] = "Profile";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+    Layout = "_ManageLayout";
+}
+
+<style>
+    /* Container for the cover image */
+    .image-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: auto; /* Center horizontally */
+        border-radius: 16px; /* Rounded corners */
+        overflow: hidden;
+        background-color: #f2f2f2;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    /* The actual cover image, forced to fill container */
+    .cover-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Overlay that appears on hover */
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4); /* Semi-transparent dark overlay */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.25rem;
+        opacity: 0; /* Hidden by default */
+        transition: opacity 0.3s;
+    }
+
+    /* Show overlay on hover */
+    .image-container:hover .overlay {
+        opacity: 1;
+        cursor: pointer;
+    }
+</style>
+
+<h3 class="text-center">@ViewData["Title"]</h3>
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body">
+                <form id="profile-form" method="post" asp-action="Update" enctype="multipart/form-data">
+                    <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+
+                    @* Hidden fields to ensure values are submitted *@
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="Email" />
+                    <input type="hidden" asp-for="UserName" />
+
+                    @{
+                        var coverUrl = string.IsNullOrEmpty(Model.CurrentCover)
+                        ? Url.Content("~/GameZone.jpg")
+                        : ($"{FileSettings.ImagesPath}/users/{Model.CurrentCover}");
+                    }
+
+                    <div class="mb-3 text-center">
+                        <label for="Cover" class="image-container">
+                            <img id="coverPreview" src="@coverUrl" alt="Cover Image" class="cover-image" />
+                            <div class="overlay">
+                                <i class="bi bi-camera mb-1" style="font-size: 2rem;"></i>
+                                <span>Edit</span>
+                            </div>
+                        </label>
+
+                        <input type="file" class="d-none" id="Cover" name="Cover"
+                               accept="@FileSettings.AllowedExtensions"
+                               data-rule-extension="@FileSettings.AllowedExtensions.Replace(".", string.Empty)"
+                               data-msg-extension="Not allowed extension"
+                               data-rule-filesize="@FileSettings.MaxFileSizeInBytes"
+                               data-msg-filesize="Maximum allowed size is @FileSettings.MaxFileSizeInMB MB"
+                               onchange="previewImage(event)">
+
+
+                        <span asp-validation-for="Cover" class="text-danger d-block mt-2"></span>
+
+                        <small class="form-text text-muted">
+                            Only @FileSettings.AllowedExtensions files are allowed with max size @(FileSettings.MaxFileSizeInMB)MB.
+                        </small>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input asp-for="Email" class="form-control" placeholder="Please choose your Email." disabled />
+                        <label class="form-label"><i class="bi bi-envelope"></i> Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="UserName" class="form-control" placeholder="Please choose your UserName." disabled />
+                        <label class="form-label"><i class="bi bi-people"></i> UserName</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="PhoneNumber" class="form-control" placeholder="Please enter your phone number." />
+                        <label asp-for="PhoneNumber"><i class="bi bi-phone"></i> Phone Number</label>
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Country" class="form-control" placeholder="Please enter your Country." />
+                        <label asp-for="Country"><i class="bi bi-airplane"></i> Country</label>
+                        <span asp-validation-for="Country" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input asp-for="City" class="form-control" placeholder="Please enter your City." />
+                        <label asp-for="City"><i class="bi bi-building"></i> City</label>
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+
+                    <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-outline-warning">
+                        Save
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/filesize-validator.js" asp-append-version="true"></script>
+    <script src="~/js/game-form.js" asp-append-version="true"></script>
+}
+<script>
+    function previewImage(event) {
+        const input = event.target;
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('coverPreview').src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    document.querySelector('.image-container').addEventListener('click', function () {
+        setTimeout(() => {
+            document.getElementById('Cover').click();
+        }, 0); // Small delay ensures browser processes the click correctly
+    });
+</script>
+
+<style>
+    .image-container {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .cover-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    .image-container:hover .overlay {
+        opacity: 1;
+    }
+
+    .text-danger {
+        font-size: 0.875rem;
+    }
+</style>

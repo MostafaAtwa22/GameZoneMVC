@@ -11,10 +11,8 @@
             <div class="col-md-5">
                 <div class="card shadow-sm p-4 h-100 border-success">
                     <h3 class="text-success mb-4">Sign In with Company Account</h3>
-                    <!-- Validation Summary for ModelState errors -->
-                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
                     <form asp-action="Login">
-                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" role="alert"></div>
+                        <div asp-validation-summary="All" class="text-danger mb-3" role="alert"></div>
 
                         <div class="form-group mb-3">
                             <label asp-for="UserNameOrEmail"><i class="bi bi-envelope"></i> UserName Or Email</label>

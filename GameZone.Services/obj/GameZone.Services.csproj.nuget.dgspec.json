@@ -228,6 +228,10 @@
               "target": "Package",
               "version": "[3.1.32, )"
             },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.TagHelpers": {
               "target": "Package",
               "version": "[2.3.0, )"

@@ -1,0 +1,34 @@
+﻿@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+    var userName = User.Identity?.Name ?? "Guest";
+}
+
+<div class="list-group">
+    <a class="list-group-item list-group-item-action @ManageNavPages.IndexNavClass(ViewContext)"
+       asp-controller="Manage" asp-action="Index">
+        Profile
+    </a>
+    <a class="list-group-item list-group-item-action @ManageNavPages.EmailNavClass(ViewContext)"
+       asp-controller="Manage" asp-action="Email">
+        Email
+    </a>
+    <a class="list-group-item list-group-item-action @ManageNavPages.ChangePasswordNavClass(ViewContext)"
+       asp-controller="Manage" asp-action="ChangePassword">
+        Password
+    </a>
+
+    @if (hasExternalLogins)
+    {
+        <a class="list-group-item list-group-item-action @ManageNavPages.ExternalLoginsNavClass(ViewContext)"
+           asp-controller="Manage" asp-action="ExternalLogins">
+            External Logins
+        </a>
+    }
+    <a class="list-group-item list-group-item-action @ManageNavPages.PersonalDataNavClass(ViewContext)"
+       asp-controller="Manage" asp-action="PersonalData">
+        Personal Data
+    </a>
+</div>

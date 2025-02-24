@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\assets\img\games\" />
+    <Folder Include="wwwroot\assets\img\users\" />
   </ItemGroup>
 
 </Project>

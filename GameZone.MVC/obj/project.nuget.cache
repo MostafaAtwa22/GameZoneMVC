@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xnbKGetKRNY=",
+  "dgSpecHash": "ZASi1Sw1ttw=",
   "success": true,
   "projectFilePath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\GameZone.MVC.csproj",
   "expectedPackageFiles": [
@@ -64,7 +64,9 @@
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnet.razor\\3.3.0\\microsoft.aspnet.razor.3.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnet.webpages\\3.3.0\\microsoft.aspnet.webpages.3.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.3.0\\microsoft.aspnetcore.antiforgery.2.3.0.nupkg.sha512",
+    "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.3.0\\microsoft.aspnetcore.authentication.2.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.3.0\\microsoft.aspnetcore.authentication.cookies.2.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.0\\microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.3.0\\microsoft.aspnetcore.authorization.2.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.3.0\\microsoft.aspnetcore.authorization.policy.2.3.0.nupkg.sha512",
@@ -80,6 +82,7 @@
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.0\\microsoft.aspnetcore.http.extensions.2.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.32\\microsoft.aspnetcore.http.features.3.1.32.nupkg.sha512",
+    "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.3.0\\microsoft.aspnetcore.identity.2.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\8.0.13\\microsoft.aspnetcore.identity.entityframeworkcore.8.0.13.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.3.0\\microsoft.aspnetcore.jsonpatch.2.3.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.3.0\\microsoft.aspnetcore.mvc.abstractions.2.3.0.nupkg.sha512",

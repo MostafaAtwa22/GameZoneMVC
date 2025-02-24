@@ -34,7 +34,6 @@ namespace GameZone.MVC.Controllers
         }
 
         [HttpGet]
-        [AllowAnonymous]
         [Authorize(Roles = "Admin, User")]
         public async Task<IActionResult> Details(int id)
         {

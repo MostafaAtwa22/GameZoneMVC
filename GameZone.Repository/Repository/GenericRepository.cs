@@ -1,6 +1,6 @@
 ﻿namespace GameZone.Repository.Repository
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly ApplicationDbContext _context;
         private DbSet<T> _dbSet;

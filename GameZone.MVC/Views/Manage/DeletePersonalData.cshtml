@@ -1,0 +1,30 @@
+﻿@model DeleteDataVM
+@{
+    ViewData["Title"] = "Delete Personal Data";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+    Layout = "_ManageLayout";
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<div class="alert alert-danger" role="alert">
+    <p>
+        <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
+    </p>
+</div>
+
+<div>
+    <form asp-action="DeletePersonData" method="post">
+        <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+        <div class="form-floating mb-3">
+            <input asp-for="Password" class="form-control" autocomplete="password" aria-required="true" placeholder="Please enter your password." />
+            <label asp-for="Password"><i class="bi bi-lock"></i> Password</label>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <button class="w-60 btn btn-lg btn-outline-danger" type="submit">Delete data and close my account</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

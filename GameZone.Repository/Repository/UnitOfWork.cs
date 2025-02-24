@@ -17,7 +17,8 @@ namespace GameZone.Repository.Repository
 
             Categories = new GenericRepository<Category>(_context);
             Games = new GenericRepository<Game>(_context);
-            Devices = new GenericRepository<Device>(_context); 
+            Devices = new GenericRepository<Device>(_context);
+            ApplicationUsers = new GenericRepository<ApplicationUser>(_context); 
         }
 
         public IGenericRepository<Category> Categories { get; private set; }
@@ -25,6 +26,8 @@ namespace GameZone.Repository.Repository
         public IGenericRepository<Game> Games { get; private set; }
 
         public IGenericRepository<Device> Devices { get; private set; }
+
+        public IGenericRepository<ApplicationUser> ApplicationUsers { get; private set; }
 
         public async Task<int> Complete()
             => await _context.SaveChangesAsync();
