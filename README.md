@@ -1,5 +1,5 @@
 ## 📌 Overview  
-**GameZone** is a modern **E-Commerce Web Application** specializing in video games. The project follows the **Onion Architecture** and adheres to **Clean Code** principles.  
+**GameZone** is a modern **ASP.Net Web Application** specializing in video games. The project follows the **Onion Architecture** and adheres to **Clean Code** principles.  
 
 ## 🏗️ Architecture  
 The application is structured following **Onion Architecture**, ensuring high maintainability and separation of concerns:  
