@@ -16,6 +16,7 @@ The application is structured following **Onion Architecture**, ensuring high ma
 ✅ **User Service Management (Delete, Lock, or Modify User Accounts)**  
 ✅ **AutoMapper for Object Mapping**  
 ✅ **Clean & Maintainable Code (SOLID Principles, Repository Pattern, Dependency Injection)**  
+✅ **Code-First Approach for Database Management**
 
 ## 🔐 Authentication & Authorization  
 - Uses **ASP.NET Identity** for user authentication.  
