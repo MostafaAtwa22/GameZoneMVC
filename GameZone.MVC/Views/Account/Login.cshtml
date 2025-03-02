@@ -10,7 +10,7 @@
         <div class="row justify-content-center align-items-stretch">
             <div class="col-md-5">
                 <div class="card shadow-sm p-4 h-100 border-success">
-                    <h3 class="text-success mb-4">Sign In with Company Account</h3>
+                    <h3 class="text-success mb-4">Sign In with GameZone Account</h3>
                     <form asp-action="Login">
                         <div asp-validation-summary="All" class="text-danger mb-3" role="alert"></div>
 
@@ -36,8 +36,21 @@
                         </div>
 
                         <!-- Login button -->
-                        <button type="submit" class="btn btn-outline-success mb-3">Sign In</button>
-                        <div class="text-center">
+                        <button type="submit" class="btn btn-outline-success w-100 mb-3">Sign In</button>
+
+                        <!-- OR Divider -->
+                        <div class="d-flex align-items-center my-3">
+                            <hr class="flex-grow-1">
+                            <span class="mx-2 text-muted">OR</span>
+                            <hr class="flex-grow-1">
+                        </div>
+
+                        <!-- Google authentication button -->
+                        <a asp-action="GoogleLogin" class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-google me-2"></i> Sign in with Google
+                        </a>
+
+                        <div class="text-center mt-3">
                             <p>Don't have an account? <a asp-action="Register" class="text-primary">Create One</a></p>
                         </div>
                     </form>

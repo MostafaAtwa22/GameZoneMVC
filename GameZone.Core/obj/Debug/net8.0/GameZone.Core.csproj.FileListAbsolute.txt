@@ -11,3 +11,16 @@ D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\ref\GameZone.Core.dll
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.csproj.AssemblyReference.cache
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Core\obj\Debug\net8.0\GameZone.Core.sourcelink.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\bin\Debug\net8.0\GameZone.Core.deps.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\bin\Debug\net8.0\GameZone.Core.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\bin\Debug\net8.0\GameZone.Core.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\GameZone.Core.csproj.AssemblyReference.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\GameZone.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\GameZone.Core.AssemblyInfoInputs.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\GameZone.Core.AssemblyInfo.cs
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\GameZone.Core.csproj.CoreCompileInputs.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\GameZone.Core.sourcelink.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\GameZone.Core.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\refint\GameZone.Core.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\GameZone.Core.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Core\obj\Debug\net8.0\ref\GameZone.Core.dll

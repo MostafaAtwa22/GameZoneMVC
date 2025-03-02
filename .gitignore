@@ -1,11 +1,3 @@
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/dcdfb2f7-2271-4a00-8e7a-d4b6a1e6f256.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/c6a432c8-5184-4c25-830f-29a87248e7d8.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/bae5cf44-47d6-492d-993f-7f295f209342.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/8f26295d-3d01-492a-b542-750ee76325b7.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/5aa30781-868e-436f-8422-5b99dd59a58b.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/7a5b5d3c-9035-4188-9b90-453a7a14ab33.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/b0b1be14-be06-49cf-ba79-8ae065c0dffa.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/cef330d1-dfb2-4fc4-8578-83a8c3b893d6.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/651972e9-fd23-4b19-9583-1ed7d224a6f2.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/8092a286-f0b2-4375-ad93-dc744b8960ce.vsidx
-GameZone.MVC/.vs/GameZone.MVC/FileContentIndex/8db975e5-cc86-4e66-8232-aa389e69a242.vsidx
+*.vsidx
+bin
+obj

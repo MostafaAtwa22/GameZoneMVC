@@ -859,6 +859,22 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.Google/8.0.12": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authorization/2.3.0": {
         "type": "package",
         "dependencies": {
@@ -1252,20 +1268,41 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Mvc.Razor.Extensions/2.3.0": {
+      "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Razor.Language": "2.3.0",
-          "Microsoft.CodeAnalysis.Razor": "2.3.0"
+          "Microsoft.AspNetCore.Razor.Language": "6.0.0",
+          "Microsoft.CodeAnalysis.Razor": "6.0.0"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "6.0.0",
+          "Microsoft.CodeAnalysis.Razor": "6.0.0",
+          "Microsoft.Extensions.DependencyModel": "6.0.0"
         },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
         "build": {
-          "build/netstandard2.0/_._": {}
+          "buildTransitive/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.TagHelpers/2.3.0": {
@@ -1395,6 +1432,26 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.StaticFiles/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.WebEncoders": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.dll": {
             "related": ".xml"
           }
         }
@@ -2321,6 +2378,28 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/netstandard2.0/_._": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/_._": {}
+        }
+      },
       "Microsoft.Extensions.FileSystemGlobbing/8.0.0": {
         "type": "package",
         "compile": {
@@ -2968,6 +3047,39 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "NToastNotify/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.0",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
+          "Microsoft.AspNetCore.StaticFiles": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/NToastNotify.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/NToastNotify.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/net6.0/wwwroot/noty.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/toastr.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/NToastNotify.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/NToastNotify.props": {}
         }
       },
       "NuGet.Common/6.11.0": {
@@ -4872,6 +4984,21 @@
         "microsoft.aspnetcore.authentication.core.nuspec"
       ]
     },
+    "Microsoft.AspNetCore.Authentication.Google/8.0.12": {
+      "sha512": "+ytq0YfuQ5K8YnvfglBvYxxchsPpedeYlg7gYZY6oFvPIWqA9BjIabexLKAYfL6MewKrOJbRIgWvfx0pONnmPQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/8.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.8.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/2.3.0": {
       "sha512": "2/aBgLqBXva/+w8pzRNY8ET43Gi+dr1gv/7ySfbsh23lTK6IAgID5MGUEa1hreNIF+0XpW4tX7QwVe70+YvaPg==",
       "type": "package",
@@ -5176,19 +5303,35 @@
         "microsoft.aspnetcore.mvc.razor.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Mvc.Razor.Extensions/2.3.0": {
-      "sha512": "dDQMZ+wDnMsodIuhGLeMrpj4tZ6U0E+PLMarUiwJfHRwvTckBt2d5uZkbZ0MotH2DkxXcCUMhM1reAWJrh840w==",
+    "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
+      "sha512": "M0h+ChPgydX2xY17agiphnAVa/Qh05RAP8eeuqGGhQKT10claRBlLNO6d2/oSV8zy0RLHzwLnNZm5xuC/gckGA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.mvc.razor.extensions/2.3.0",
+      "path": "microsoft.aspnetcore.mvc.razor.extensions/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.props",
-        "build/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.targets",
-        "lib/net46/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
-        "microsoft.aspnetcore.mvc.razor.extensions.2.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.razor.extensions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/6.0.0": {
+      "sha512": "bf4kbla/8Qiu53MgFPz1u3H1ThoookPpFy+Ya9Q9p531wXK1pZ3tfz/Gtx8SKy41yz99jhZHTUM1QqLl7eJRgQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.razor.runtimecompilation/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets",
+        "buildTransitive/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.xml",
+        "microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.razor.runtimecompilation.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.TagHelpers/2.3.0": {
@@ -5292,6 +5435,19 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.xml",
         "microsoft.aspnetcore.routing.abstractions.2.3.0.nupkg.sha512",
         "microsoft.aspnetcore.routing.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.StaticFiles/2.2.0": {
+      "sha512": "byZDrjir6Co5EoWbraQyG0qbPCUG6XgGYQstipMF9lucOAjq/mqnIyt8B8iMWnin/ghZoOln9Y01af4rUAwOhA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.staticfiles/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.StaticFiles.xml",
+        "microsoft.aspnetcore.staticfiles.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.staticfiles.nuspec"
       ]
     },
     "Microsoft.AspNetCore.WebUtilities/2.3.0": {
@@ -7011,6 +7167,29 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.FileProviders.Embedded/6.0.0": {
+      "sha512": "9uQbDTqX1MidhoZFUSK1JItt74IapEadFDOIWAlBIKxr3O/ZEWLWkLYGlgUeP1Dkyog6/CB7h1EAU3xADYZ/lA==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.embedded/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.props",
+        "build/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.targets",
+        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.props",
+        "buildMultiTargeting/Microsoft.Extensions.FileProviders.Embedded.targets",
+        "lib/net461/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/net461/Microsoft.Extensions.FileProviders.Embedded.xml",
+        "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/net6.0/Microsoft.Extensions.FileProviders.Embedded.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.xml",
+        "microsoft.extensions.fileproviders.embedded.6.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.embedded.nuspec",
+        "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
+      ]
+    },
     "Microsoft.Extensions.FileSystemGlobbing/8.0.0": {
       "sha512": "OK+670i7esqlQrPjdIKRbsyMCe9g5kSLpRRQGSr4Q58AOYEe/hCnfLZprh7viNisSUUQZmMrbbuDaIrP+V1ebQ==",
       "type": "package",
@@ -8299,6 +8478,28 @@
         "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.2.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "NToastNotify/8.0.0": {
+      "sha512": "dLTBCrbWXGMhwjGnkZBcQFyc6pp1caKfe3vqQF1A98nv8EH6kWhJMGmJzPnUgiHo2ZGAQRfvx76XQjVNEGKnzw==",
+      "type": "package",
+      "path": "ntoastnotify/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/NToastNotify.props",
+        "buildMultiTargeting/NToastNotify.props",
+        "buildTransitive/NToastNotify.props",
+        "content/wwwroot/noty.js",
+        "content/wwwroot/toastr.js",
+        "contentFiles/any/net6.0/wwwroot/noty.js",
+        "contentFiles/any/net6.0/wwwroot/toastr.js",
+        "lib/net6.0/NToastNotify.dll",
+        "ntoastnotify.8.0.0.nupkg.sha512",
+        "ntoastnotify.nuspec",
+        "staticwebassets/noty.js",
+        "staticwebassets/toastr.js"
       ]
     },
     "NuGet.Common/6.11.0": {
@@ -9944,10 +10145,12 @@
     "net8.0": [
       "GameZone.Services >= 1.0.0",
       "MailKit >= 4.10.0",
+      "Microsoft.AspNetCore.Authentication.Google >= 8.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.13",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
-      "MimeKit >= 4.10.0"
+      "MimeKit >= 4.10.0",
+      "NToastNotify >= 8.0.0"
     ]
   },
   "packageFolders": {
@@ -9957,11 +10160,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\GameZone.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\GameZone.MVC.csproj",
       "projectName": "GameZone.MVC",
-      "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\GameZone.MVC.csproj",
+      "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\GameZone.MVC.csproj",
       "packagesPath": "C:\\Users\\atwam\\.nuget\\packages\\",
-      "outputPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\obj\\",
+      "outputPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9982,8 +10185,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\GameZone.Services.csproj": {
-              "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\GameZone.Services.csproj"
+            "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\GameZone.Services.csproj": {
+              "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\GameZone.Services.csproj"
             }
           }
         }
@@ -10008,6 +10211,10 @@
             "target": "Package",
             "version": "[4.10.0, )"
           },
+          "Microsoft.AspNetCore.Authentication.Google": {
+            "target": "Package",
+            "version": "[8.0.12, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[8.0.13, )"
@@ -10025,6 +10232,10 @@
           "MimeKit": {
             "target": "Package",
             "version": "[4.10.0, )"
+          },
+          "NToastNotify": {
+            "target": "Package",
+            "version": "[8.0.0, )"
           }
         },
         "imports": [

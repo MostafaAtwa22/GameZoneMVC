@@ -7,6 +7,7 @@ using GameZone.Services.Services.EmailServices;
 using GameZone.Services.Services.GamesServices;
 using GameZone.Services.Services.ManageServices;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Google;
 
 namespace GameZone.MVC
 {
@@ -15,6 +16,15 @@ namespace GameZone.MVC
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Add Google Authentication
+            builder.Services
+            .AddAuthentication()
+            .AddGoogle(GoogleDefaults.AuthenticationScheme, option =>
+            {
+                option.ClientId = builder.Configuration["Authentication:Google:ClientId"]!;
+                option.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"]!;
+            });
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

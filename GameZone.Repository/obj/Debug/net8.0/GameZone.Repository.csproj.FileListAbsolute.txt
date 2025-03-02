@@ -14,3 +14,19 @@ D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.pdb
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\net8.0\ref\GameZone.Repository.dll
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.sourcelink.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\bin\Debug\net8.0\GameZone.Repository.deps.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\bin\Debug\net8.0\GameZone.Repository.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\bin\Debug\net8.0\GameZone.Repository.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\bin\Debug\net8.0\GameZone.Core.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\bin\Debug\net8.0\GameZone.Core.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.csproj.AssemblyReference.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.AssemblyInfoInputs.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.AssemblyInfo.cs
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.csproj.CoreCompileInputs.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.sourcelink.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.E614A21C.Up2Date
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\refint\GameZone.Repository.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\GameZone.Repository.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Repository\obj\Debug\net8.0\ref\GameZone.Repository.dll

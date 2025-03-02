@@ -16,3 +16,21 @@ D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\ne
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.pdb
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\ref\GameZone.Services.dll
 D:\programming\Backend\MVC Projects\GameZone(MVC)\GameZone.Services\obj\Debug\net8.0\GameZone.Services.sourcelink.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\bin\Debug\net8.0\GameZone.Services.deps.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\bin\Debug\net8.0\GameZone.Services.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\bin\Debug\net8.0\GameZone.Services.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\bin\Debug\net8.0\GameZone.Core.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\bin\Debug\net8.0\GameZone.Repository.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\bin\Debug\net8.0\GameZone.Repository.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\bin\Debug\net8.0\GameZone.Core.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.Services.csproj.AssemblyReference.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.Services.AssemblyInfoInputs.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.Services.AssemblyInfo.cs
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.Services.csproj.CoreCompileInputs.cache
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.Services.sourcelink.json
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.28C2A367.Up2Date
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.Services.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\refint\GameZone.Services.dll
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\GameZone.Services.pdb
+C:\Users\atwam\Source\Repos\GameZoneMVC\GameZone.Services\obj\Debug\net8.0\ref\GameZone.Services.dll

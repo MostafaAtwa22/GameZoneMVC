@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\GameZone.MVC.csproj": {}
+    "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\GameZone.MVC.csproj": {}
   },
   "projects": {
-    "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Core\\GameZone.Core.csproj": {
+    "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Core\\GameZone.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Core\\GameZone.Core.csproj",
+        "projectUniqueName": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Core\\GameZone.Core.csproj",
         "projectName": "GameZone.Core",
-        "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Core\\GameZone.Core.csproj",
+        "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Core\\GameZone.Core.csproj",
         "packagesPath": "C:\\Users\\atwam\\.nuget\\packages\\",
-        "outputPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Core\\obj\\",
+        "outputPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,14 +75,14 @@
         }
       }
     },
-    "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\GameZone.MVC.csproj": {
+    "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\GameZone.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\GameZone.MVC.csproj",
+        "projectUniqueName": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\GameZone.MVC.csproj",
         "projectName": "GameZone.MVC",
-        "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\GameZone.MVC.csproj",
+        "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\GameZone.MVC.csproj",
         "packagesPath": "C:\\Users\\atwam\\.nuget\\packages\\",
-        "outputPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.MVC\\obj\\",
+        "outputPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -103,8 +103,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\GameZone.Services.csproj": {
-                "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\GameZone.Services.csproj"
+              "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\GameZone.Services.csproj": {
+                "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\GameZone.Services.csproj"
               }
             }
           }
@@ -129,6 +129,10 @@
               "target": "Package",
               "version": "[4.10.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[8.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.13, )"
@@ -146,6 +150,10 @@
             "MimeKit": {
               "target": "Package",
               "version": "[4.10.0, )"
+            },
+            "NToastNotify": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -171,14 +179,14 @@
         }
       }
     },
-    "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Repository\\GameZone.Repository.csproj": {
+    "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Repository\\GameZone.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Repository\\GameZone.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Repository\\GameZone.Repository.csproj",
         "projectName": "GameZone.Repository",
-        "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Repository\\GameZone.Repository.csproj",
+        "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Repository\\GameZone.Repository.csproj",
         "packagesPath": "C:\\Users\\atwam\\.nuget\\packages\\",
-        "outputPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Repository\\obj\\",
+        "outputPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -199,8 +207,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Core\\GameZone.Core.csproj": {
-                "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Core\\GameZone.Core.csproj"
+              "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Core\\GameZone.Core.csproj": {
+                "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Core\\GameZone.Core.csproj"
               }
             }
           }
@@ -258,14 +266,14 @@
         }
       }
     },
-    "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\GameZone.Services.csproj": {
+    "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\GameZone.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\GameZone.Services.csproj",
+        "projectUniqueName": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\GameZone.Services.csproj",
         "projectName": "GameZone.Services",
-        "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\GameZone.Services.csproj",
+        "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\GameZone.Services.csproj",
         "packagesPath": "C:\\Users\\atwam\\.nuget\\packages\\",
-        "outputPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\obj\\",
+        "outputPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -286,8 +294,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Repository\\GameZone.Repository.csproj": {
-                "projectPath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Repository\\GameZone.Repository.csproj"
+              "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Repository\\GameZone.Repository.csproj": {
+                "projectPath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Repository\\GameZone.Repository.csproj"
               }
             }
           }

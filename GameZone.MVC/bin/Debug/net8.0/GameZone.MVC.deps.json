@@ -3,19 +3,341 @@
     "name": ".NETCoreApp,Version=v8.0",
     "signature": ""
   },
-  "compilationOptions": {},
+  "compilationOptions": {
+    "defines": [
+      "TRACE",
+      "DEBUG",
+      "NET",
+      "NET8_0",
+      "NETCOREAPP",
+      "NET5_0_OR_GREATER",
+      "NET6_0_OR_GREATER",
+      "NET7_0_OR_GREATER",
+      "NET8_0_OR_GREATER",
+      "NETCOREAPP1_0_OR_GREATER",
+      "NETCOREAPP1_1_OR_GREATER",
+      "NETCOREAPP2_0_OR_GREATER",
+      "NETCOREAPP2_1_OR_GREATER",
+      "NETCOREAPP2_2_OR_GREATER",
+      "NETCOREAPP3_0_OR_GREATER",
+      "NETCOREAPP3_1_OR_GREATER"
+    ],
+    "languageVersion": "12.0",
+    "platform": "",
+    "allowUnsafe": false,
+    "warningsAsErrors": false,
+    "optimize": false,
+    "keyFile": "",
+    "emitEntryPoint": true,
+    "xmlDoc": false,
+    "debugType": "portable"
+  },
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "GameZone.MVC/1.0.0": {
         "dependencies": {
           "GameZone.Services": "1.0.0",
           "MailKit": "4.10.0",
+          "Microsoft.AspNetCore.Authentication.Google": "8.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.13",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
-          "MimeKit": "4.10.0"
+          "MimeKit": "4.10.0",
+          "NToastNotify": "8.0.0",
+          "Microsoft.AspNetCore.Antiforgery.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Authentication.BearerToken": "8.0.0.0",
+          "Microsoft.AspNetCore.Authentication.Cookies.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Authentication.Core.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Authentication.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Authentication.OAuth": "8.0.0.0",
+          "Microsoft.AspNetCore.Authorization.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Authorization.Policy.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Components.Authorization": "8.0.0.0",
+          "Microsoft.AspNetCore.Components": "8.0.0.0",
+          "Microsoft.AspNetCore.Components.Endpoints": "8.0.0.0",
+          "Microsoft.AspNetCore.Components.Forms": "8.0.0.0",
+          "Microsoft.AspNetCore.Components.Server": "8.0.0.0",
+          "Microsoft.AspNetCore.Components.Web": "8.0.0.0",
+          "Microsoft.AspNetCore.Connections.Abstractions": "8.0.0.0",
+          "Microsoft.AspNetCore.CookiePolicy": "8.0.0.0",
+          "Microsoft.AspNetCore.Cors": "8.0.0.0",
+          "Microsoft.AspNetCore.DataProtection.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.DataProtection.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.DataProtection.Extensions": "8.0.0.0",
+          "Microsoft.AspNetCore.Diagnostics.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Diagnostics": "8.0.0.0",
+          "Microsoft.AspNetCore.Diagnostics.HealthChecks": "8.0.0.0",
+          "Microsoft.AspNetCore": "8.0.0.0",
+          "Microsoft.AspNetCore.HostFiltering": "8.0.0.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Hosting": "8.0.0.0",
+          "Microsoft.AspNetCore.Hosting.Server.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Html.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Connections.Common": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Connections": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Extensions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Features.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Http.Results": "8.0.0.0",
+          "Microsoft.AspNetCore.HttpLogging": "8.0.0.0",
+          "Microsoft.AspNetCore.HttpOverrides": "8.0.0.0",
+          "Microsoft.AspNetCore.HttpsPolicy": "8.0.0.0",
+          "Microsoft.AspNetCore.Identity.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Localization": "8.0.0.0",
+          "Microsoft.AspNetCore.Localization.Routing": "8.0.0.0",
+          "Microsoft.AspNetCore.Metadata": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.ApiExplorer": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Core.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Cors": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.DataAnnotations.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Formatters.Xml": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Localization": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.RazorPages": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.TagHelpers.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.OutputCaching": "8.0.0.0",
+          "Microsoft.AspNetCore.RateLimiting": "8.0.0.0",
+          "Microsoft.AspNetCore.Razor.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Razor.Runtime.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.RequestDecompression": "8.0.0.0",
+          "Microsoft.AspNetCore.ResponseCaching.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.ResponseCaching": "8.0.0.0",
+          "Microsoft.AspNetCore.ResponseCompression": "8.0.0.0",
+          "Microsoft.AspNetCore.Rewrite": "8.0.0.0",
+          "Microsoft.AspNetCore.Routing.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Routing.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.Server.HttpSys": "8.0.0.0",
+          "Microsoft.AspNetCore.Server.IIS": "8.0.0.0",
+          "Microsoft.AspNetCore.Server.IISIntegration": "8.0.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel.Core": "8.0.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel": "8.0.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes": "8.0.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic": "8.0.0.0",
+          "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets": "8.0.0.0",
+          "Microsoft.AspNetCore.Session": "8.0.0.0",
+          "Microsoft.AspNetCore.SignalR.Common": "8.0.0.0",
+          "Microsoft.AspNetCore.SignalR.Core": "8.0.0.0",
+          "Microsoft.AspNetCore.SignalR": "8.0.0.0",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "8.0.0.0",
+          "Microsoft.AspNetCore.StaticFiles.Reference": "8.0.0.0",
+          "Microsoft.AspNetCore.WebSockets": "8.0.0.0",
+          "Microsoft.AspNetCore.WebUtilities.Reference": "8.0.0.0",
+          "Microsoft.CSharp.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Caching.Memory.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.CommandLine": "8.0.0.0",
+          "Microsoft.Extensions.Configuration": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.EnvironmentVariables": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.Ini": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.KeyPerFile": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.UserSecrets": "8.0.0.0",
+          "Microsoft.Extensions.Configuration.Xml": "8.0.0.0",
+          "Microsoft.Extensions.Diagnostics.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Diagnostics": "8.0.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "8.0.0.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0.0",
+          "Microsoft.Extensions.Features": "8.0.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.Extensions.FileProviders.Composite.Reference": "8.0.0.0",
+          "Microsoft.Extensions.FileProviders.Embedded.Reference": "8.0.0.0",
+          "Microsoft.Extensions.FileProviders.Physical": "8.0.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Hosting.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Hosting": "8.0.0.0",
+          "Microsoft.Extensions.Http": "8.0.0.0",
+          "Microsoft.Extensions.Localization.Abstractions.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Localization.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Logging.Configuration": "8.0.0.0",
+          "Microsoft.Extensions.Logging.Console": "8.0.0.0",
+          "Microsoft.Extensions.Logging.Debug": "8.0.0.0",
+          "Microsoft.Extensions.Logging.EventLog": "8.0.0.0",
+          "Microsoft.Extensions.Logging.EventSource": "8.0.0.0",
+          "Microsoft.Extensions.Logging.TraceSource": "8.0.0.0",
+          "Microsoft.Extensions.ObjectPool.Reference": "8.0.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0.0",
+          "Microsoft.Extensions.Options.DataAnnotations": "8.0.0.0",
+          "Microsoft.Extensions.WebEncoders.Reference": "8.0.0.0",
+          "Microsoft.JSInterop": "8.0.0.0",
+          "Microsoft.Net.Http.Headers.Reference": "8.0.0.0",
+          "Microsoft.VisualBasic.Core": "13.0.0.0",
+          "Microsoft.VisualBasic": "10.0.0.0",
+          "Microsoft.Win32.Primitives": "8.0.0.0",
+          "Microsoft.Win32.Registry.Reference": "8.0.0.0",
+          "mscorlib": "4.0.0.0",
+          "netstandard": "2.1.0.0",
+          "System.AppContext": "8.0.0.0",
+          "System.Buffers.Reference": "8.0.0.0",
+          "System.Collections.Concurrent": "8.0.0.0",
+          "System.Collections": "8.0.0.0",
+          "System.Collections.Immutable.Reference": "8.0.0.0",
+          "System.Collections.NonGeneric": "8.0.0.0",
+          "System.Collections.Specialized": "8.0.0.0",
+          "System.ComponentModel.Annotations.Reference": "8.0.0.0",
+          "System.ComponentModel.DataAnnotations": "4.0.0.0",
+          "System.ComponentModel": "8.0.0.0",
+          "System.ComponentModel.EventBasedAsync": "8.0.0.0",
+          "System.ComponentModel.Primitives": "8.0.0.0",
+          "System.ComponentModel.TypeConverter": "8.0.0.0",
+          "System.Configuration": "4.0.0.0",
+          "System.Console": "8.0.0.0",
+          "System.Core": "4.0.0.0",
+          "System.Data.Common": "8.0.0.0",
+          "System.Data.DataSetExtensions.Reference": "8.0.0.0",
+          "System.Data": "4.0.0.0",
+          "System.Diagnostics.Contracts": "8.0.0.0",
+          "System.Diagnostics.Debug": "8.0.0.0",
+          "System.Diagnostics.EventLog.Reference": "8.0.0.0",
+          "System.Diagnostics.FileVersionInfo": "8.0.0.0",
+          "System.Diagnostics.Process": "8.0.0.0",
+          "System.Diagnostics.StackTrace": "8.0.0.0",
+          "System.Diagnostics.TextWriterTraceListener": "8.0.0.0",
+          "System.Diagnostics.Tools": "8.0.0.0",
+          "System.Diagnostics.TraceSource": "8.0.0.0",
+          "System.Diagnostics.Tracing": "8.0.0.0",
+          "System": "4.0.0.0",
+          "System.Drawing": "4.0.0.0",
+          "System.Drawing.Primitives": "8.0.0.0",
+          "System.Dynamic.Runtime": "8.0.0.0",
+          "System.Formats.Asn1.Reference": "8.0.0.0",
+          "System.Formats.Tar": "8.0.0.0",
+          "System.Globalization.Calendars": "8.0.0.0",
+          "System.Globalization": "8.0.0.0",
+          "System.Globalization.Extensions": "8.0.0.0",
+          "System.IO.Compression.Brotli": "8.0.0.0",
+          "System.IO.Compression": "8.0.0.0",
+          "System.IO.Compression.FileSystem": "4.0.0.0",
+          "System.IO.Compression.ZipFile": "8.0.0.0",
+          "System.IO": "8.0.0.0",
+          "System.IO.FileSystem.AccessControl": "8.0.0.0",
+          "System.IO.FileSystem": "8.0.0.0",
+          "System.IO.FileSystem.DriveInfo": "8.0.0.0",
+          "System.IO.FileSystem.Primitives": "8.0.0.0",
+          "System.IO.FileSystem.Watcher": "8.0.0.0",
+          "System.IO.IsolatedStorage": "8.0.0.0",
+          "System.IO.MemoryMappedFiles": "8.0.0.0",
+          "System.IO.Pipelines.Reference": "8.0.0.0",
+          "System.IO.Pipes.AccessControl": "8.0.0.0",
+          "System.IO.Pipes": "8.0.0.0",
+          "System.IO.UnmanagedMemoryStream": "8.0.0.0",
+          "System.Linq": "8.0.0.0",
+          "System.Linq.Expressions": "8.0.0.0",
+          "System.Linq.Parallel": "8.0.0.0",
+          "System.Linq.Queryable": "8.0.0.0",
+          "System.Memory.Reference": "8.0.0.0",
+          "System.Net": "4.0.0.0",
+          "System.Net.Http": "8.0.0.0",
+          "System.Net.Http.Json": "8.0.0.0",
+          "System.Net.HttpListener": "8.0.0.0",
+          "System.Net.Mail": "8.0.0.0",
+          "System.Net.NameResolution": "8.0.0.0",
+          "System.Net.NetworkInformation": "8.0.0.0",
+          "System.Net.Ping": "8.0.0.0",
+          "System.Net.Primitives": "8.0.0.0",
+          "System.Net.Quic": "8.0.0.0",
+          "System.Net.Requests": "8.0.0.0",
+          "System.Net.Security": "8.0.0.0",
+          "System.Net.ServicePoint": "8.0.0.0",
+          "System.Net.Sockets": "8.0.0.0",
+          "System.Net.WebClient": "8.0.0.0",
+          "System.Net.WebHeaderCollection": "8.0.0.0",
+          "System.Net.WebProxy": "8.0.0.0",
+          "System.Net.WebSockets.Client": "8.0.0.0",
+          "System.Net.WebSockets": "8.0.0.0",
+          "System.Numerics": "4.0.0.0",
+          "System.Numerics.Vectors.Reference": "8.0.0.0",
+          "System.ObjectModel": "8.0.0.0",
+          "System.Reflection.DispatchProxy": "8.0.0.0",
+          "System.Reflection": "8.0.0.0",
+          "System.Reflection.Emit": "8.0.0.0",
+          "System.Reflection.Emit.ILGeneration": "8.0.0.0",
+          "System.Reflection.Emit.Lightweight": "8.0.0.0",
+          "System.Reflection.Extensions": "8.0.0.0",
+          "System.Reflection.Metadata.Reference": "8.0.0.0",
+          "System.Reflection.Primitives": "8.0.0.0",
+          "System.Reflection.TypeExtensions": "8.0.0.0",
+          "System.Resources.Reader": "8.0.0.0",
+          "System.Resources.ResourceManager": "8.0.0.0",
+          "System.Resources.Writer": "8.0.0.0",
+          "System.Runtime.CompilerServices.Unsafe.Reference": "8.0.0.0",
+          "System.Runtime.CompilerServices.VisualC": "8.0.0.0",
+          "System.Runtime.Reference": "8.0.0.0",
+          "System.Runtime.Extensions": "8.0.0.0",
+          "System.Runtime.Handles": "8.0.0.0",
+          "System.Runtime.InteropServices": "8.0.0.0",
+          "System.Runtime.InteropServices.JavaScript": "8.0.0.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "8.0.0.0",
+          "System.Runtime.Intrinsics": "8.0.0.0",
+          "System.Runtime.Loader": "8.0.0.0",
+          "System.Runtime.Numerics": "8.0.0.0",
+          "System.Runtime.Serialization": "4.0.0.0",
+          "System.Runtime.Serialization.Formatters": "8.0.0.0",
+          "System.Runtime.Serialization.Json": "8.0.0.0",
+          "System.Runtime.Serialization.Primitives": "8.0.0.0",
+          "System.Runtime.Serialization.Xml": "8.0.0.0",
+          "System.Security.AccessControl.Reference": "8.0.0.0",
+          "System.Security.Claims": "8.0.0.0",
+          "System.Security.Cryptography.Algorithms": "8.0.0.0",
+          "System.Security.Cryptography.Cng.Reference": "8.0.0.0",
+          "System.Security.Cryptography.Csp": "8.0.0.0",
+          "System.Security.Cryptography": "8.0.0.0",
+          "System.Security.Cryptography.Encoding": "8.0.0.0",
+          "System.Security.Cryptography.OpenSsl": "8.0.0.0",
+          "System.Security.Cryptography.Primitives": "8.0.0.0",
+          "System.Security.Cryptography.X509Certificates": "8.0.0.0",
+          "System.Security.Cryptography.Xml.Reference": "8.0.0.0",
+          "System.Security": "4.0.0.0",
+          "System.Security.Principal": "8.0.0.0",
+          "System.Security.Principal.Windows.Reference": "8.0.0.0",
+          "System.Security.SecureString": "8.0.0.0",
+          "System.ServiceModel.Web": "4.0.0.0",
+          "System.ServiceProcess": "4.0.0.0",
+          "System.Text.Encoding.CodePages.Reference": "8.0.0.0",
+          "System.Text.Encoding.Reference": "8.0.0.0",
+          "System.Text.Encoding.Extensions": "8.0.0.0",
+          "System.Text.Encodings.Web.Reference": "8.0.0.0",
+          "System.Text.Json.Reference": "8.0.0.0",
+          "System.Text.RegularExpressions": "8.0.0.0",
+          "System.Threading.Channels.Reference": "8.0.0.0",
+          "System.Threading": "8.0.0.0",
+          "System.Threading.Overlapped": "8.0.0.0",
+          "System.Threading.RateLimiting": "8.0.0.0",
+          "System.Threading.Tasks.Dataflow.Reference": "8.0.0.0",
+          "System.Threading.Tasks": "8.0.0.0",
+          "System.Threading.Tasks.Extensions.Reference": "8.0.0.0",
+          "System.Threading.Tasks.Parallel": "8.0.0.0",
+          "System.Threading.Thread": "8.0.0.0",
+          "System.Threading.ThreadPool": "8.0.0.0",
+          "System.Threading.Timer": "8.0.0.0",
+          "System.Transactions": "4.0.0.0",
+          "System.Transactions.Local": "8.0.0.0",
+          "System.ValueTuple": "8.0.0.0",
+          "System.Web": "4.0.0.0",
+          "System.Web.HttpUtility": "8.0.0.0",
+          "System.Windows": "4.0.0.0",
+          "System.Xml": "4.0.0.0",
+          "System.Xml.Linq": "4.0.0.0",
+          "System.Xml.ReaderWriter": "8.0.0.0",
+          "System.Xml.Serialization": "4.0.0.0",
+          "System.Xml.XDocument": "8.0.0.0",
+          "System.Xml.XmlDocument": "8.0.0.0",
+          "System.Xml.XmlSerializer": "8.0.0.0",
+          "System.Xml.XPath": "8.0.0.0",
+          "System.Xml.XPath.XDocument": "8.0.0.0",
+          "WindowsBase": "4.0.0.0"
         },
         "runtime": {
+          "GameZone.MVC.dll": {}
+        },
+        "compile": {
           "GameZone.MVC.dll": {}
         }
       },
@@ -28,6 +350,9 @@
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.0.0"
           }
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {}
         }
       },
       "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.0": {
@@ -40,6 +365,9 @@
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.0.0"
           }
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "Azure.Core/1.38.0": {
@@ -58,6 +386,9 @@
             "assemblyVersion": "1.38.0.0",
             "fileVersion": "1.3800.24.12602"
           }
+        },
+        "compile": {
+          "lib/net6.0/Azure.Core.dll": {}
         }
       },
       "Azure.Identity/1.11.4": {
@@ -75,6 +406,9 @@
             "assemblyVersion": "1.11.4.0",
             "fileVersion": "1.1100.424.31005"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Identity.dll": {}
         }
       },
       "BouncyCastle.Cryptography/2.5.0": {
@@ -83,6 +417,9 @@
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.5.0.6119"
           }
+        },
+        "compile": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {}
         }
       },
       "Humanizer/2.14.1": {
@@ -143,6 +480,9 @@
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
           }
+        },
+        "compile": {
+          "lib/net6.0/Humanizer.dll": {}
         }
       },
       "Humanizer.Core.af/2.14.1": {
@@ -635,6 +975,9 @@
             "assemblyVersion": "4.10.0.0",
             "fileVersion": "4.10.0.0"
           }
+        },
+        "compile": {
+          "lib/net8.0/MailKit.dll": {}
         }
       },
       "Microsoft.AspNet.Mvc/5.3.0": {
@@ -647,6 +990,9 @@
             "assemblyVersion": "5.3.0.0",
             "fileVersion": "5.3.61130.707"
           }
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
         }
       },
       "Microsoft.AspNet.Razor/3.3.0": {
@@ -655,6 +1001,9 @@
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.61130.707"
           }
+        },
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
         }
       },
       "Microsoft.AspNet.WebPages/3.3.0": {
@@ -679,6 +1028,12 @@
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.61130.707"
           }
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/2.3.0": {
@@ -720,6 +1075,17 @@
           "Microsoft.AspNetCore.Http.Extensions": "2.3.0"
         }
       },
+      "Microsoft.AspNetCore.Authentication.Google/8.0.12": {
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "8.0.12.0",
+            "fileVersion": "8.0.1224.60312"
+          }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Authentication.Google.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/2.3.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "9.0.2",
@@ -738,6 +1104,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6704"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.KeyDerivation/9.0.2": {
@@ -749,6 +1118,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6704"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
         }
       },
       "Microsoft.AspNetCore.DataProtection/2.3.0": {
@@ -831,6 +1203,9 @@
             "assemblyVersion": "8.0.13.0",
             "fileVersion": "8.0.1325.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {}
         }
       },
       "Microsoft.AspNetCore.JsonPatch/2.3.0": {
@@ -843,6 +1218,9 @@
             "assemblyVersion": "2.3.0.0",
             "fileVersion": "2.3.0.25014"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.Abstractions/2.3.0": {
@@ -884,7 +1262,7 @@
       },
       "Microsoft.AspNetCore.Mvc.Razor/2.3.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "2.3.0",
+          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "6.0.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.3.0",
           "Microsoft.AspNetCore.Razor.Runtime": "2.3.0",
           "Microsoft.CodeAnalysis.CSharp": "4.8.0",
@@ -893,16 +1271,35 @@
           "Microsoft.Extensions.FileProviders.Composite": "8.0.0"
         }
       },
-      "Microsoft.AspNetCore.Mvc.Razor.Extensions/2.3.0": {
+      "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Language": "6.0.24",
           "Microsoft.CodeAnalysis.Razor": "6.0.24"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {
-            "assemblyVersion": "2.3.0.0",
-            "fileVersion": "2.3.0.25014"
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52608"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/6.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "6.0.0",
+          "Microsoft.CodeAnalysis.Razor": "6.0.24",
+          "Microsoft.Extensions.DependencyModel": "8.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52608"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.TagHelpers/2.3.0": {
@@ -939,6 +1336,9 @@
             "assemblyVersion": "6.0.24.0",
             "fileVersion": "6.0.2423.51812"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Runtime/2.3.0": {
@@ -966,6 +1366,15 @@
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0"
         }
       },
+      "Microsoft.AspNetCore.StaticFiles/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.3.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.3.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.2",
+          "Microsoft.Extensions.WebEncoders": "8.0.11"
+        }
+      },
       "Microsoft.AspNetCore.WebUtilities/2.3.0": {
         "dependencies": {
           "Microsoft.Net.Http.Headers": "2.3.0",
@@ -978,6 +1387,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Build/17.8.3": {
@@ -996,6 +1408,9 @@
             "assemblyVersion": "15.1.0.0",
             "fileVersion": "17.8.3.51904"
           }
+        },
+        "compile": {
+          "ref/net8.0/Microsoft.Build.dll": {}
         }
       },
       "Microsoft.Build.Framework/17.8.3": {
@@ -1004,6 +1419,9 @@
             "assemblyVersion": "15.1.0.0",
             "fileVersion": "17.8.3.51904"
           }
+        },
+        "compile": {
+          "ref/net8.0/Microsoft.Build.Framework.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.3.4": {},
@@ -1013,6 +1431,9 @@
             "assemblyVersion": "3.3.2.30504",
             "fileVersion": "3.3.2.30504"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Common/4.8.0": {
@@ -1068,6 +1489,9 @@
           "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll": {
             "locale": "zh-Hant"
           }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.CodeAnalysis.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp/4.8.0": {
@@ -1120,6 +1544,9 @@
           "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll": {
             "locale": "zh-Hant"
           }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.CodeAnalysis.CSharp.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Features/4.8.0": {
@@ -1177,6 +1604,9 @@
           "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll": {
             "locale": "zh-Hant"
           }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/4.8.0": {
@@ -1232,6 +1662,9 @@
           "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
             "locale": "zh-Hant"
           }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Elfie/1.0.0": {
@@ -1244,6 +1677,9 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.16"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Features/4.8.0": {
@@ -1302,6 +1738,9 @@
           "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll": {
             "locale": "zh-Hant"
           }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.CodeAnalysis.Features.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Razor/6.0.24": {
@@ -1315,6 +1754,9 @@
             "assemblyVersion": "6.0.24.0",
             "fileVersion": "6.0.2423.51812"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Scripting.Common/4.8.0": {
@@ -1367,6 +1809,9 @@
           "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll": {
             "locale": "zh-Hant"
           }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.CodeAnalysis.Scripting.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Workspaces.Common/4.8.0": {
@@ -1424,6 +1869,9 @@
           "lib/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll": {
             "locale": "zh-Hant"
           }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {},
@@ -1462,6 +1910,9 @@
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.16.24240.5"
           }
+        },
+        "compile": {
+          "ref/net6.0/Microsoft.Data.SqlClient.dll": {}
         }
       },
       "Microsoft.Data.SqlClient.SNI.runtime/5.1.1": {
@@ -1494,6 +1945,9 @@
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.23.22804"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.DiaSymReader.dll": {}
         }
       },
       "Microsoft.DotNet.Scaffolding.Shared/8.0.7": {
@@ -1511,6 +1965,9 @@
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.53004"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.DotNet.Scaffolding.Shared.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore/8.0.13": {
@@ -1525,6 +1982,9 @@
             "assemblyVersion": "8.0.13.0",
             "fileVersion": "8.0.1325.6604"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Abstractions/8.0.13": {
@@ -1533,6 +1993,9 @@
             "assemblyVersion": "8.0.13.0",
             "fileVersion": "8.0.1325.6604"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/8.0.13": {},
@@ -1561,6 +2024,9 @@
             "assemblyVersion": "8.0.13.0",
             "fileVersion": "8.0.1325.6604"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.SqlServer/8.0.13": {
@@ -1574,6 +2040,9 @@
             "assemblyVersion": "8.0.13.0",
             "fileVersion": "8.0.1325.6604"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Tools/8.0.13": {
@@ -1590,6 +2059,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.Caching.Memory/8.0.1": {
@@ -1621,6 +2093,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.2": {
@@ -1629,6 +2104,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyModel/8.0.2": {
@@ -1637,6 +2115,9 @@
             "assemblyVersion": "8.0.0.2",
             "fileVersion": "8.0.1024.46610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {}
         }
       },
       "Microsoft.Extensions.Diagnostics.Abstractions/8.0.1": {
@@ -1660,6 +2141,11 @@
         "dependencies": {
           "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
           "Microsoft.Extensions.Primitives": "9.0.2"
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Embedded/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0"
         }
       },
       "Microsoft.Extensions.FileSystemGlobbing/8.0.0": {},
@@ -1690,6 +2176,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6704"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Identity.Core.dll": {}
         }
       },
       "Microsoft.Extensions.Identity.Stores/9.0.2": {
@@ -1703,6 +2192,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6704"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Identity.Stores.dll": {}
         }
       },
       "Microsoft.Extensions.Localization/8.0.11": {
@@ -1738,6 +2230,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Logging.dll": {}
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/9.0.2": {
@@ -1750,6 +2245,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.ObjectPool/8.0.11": {
@@ -1770,6 +2268,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Options.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/9.0.2": {
@@ -1778,6 +2279,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
       "Microsoft.Extensions.WebEncoders/8.0.11": {
@@ -1802,6 +2306,9 @@
             "assemblyVersion": "4.61.3.0",
             "fileVersion": "4.61.3.0"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Identity.Client.dll": {}
         }
       },
       "Microsoft.Identity.Client.Extensions.Msal/4.61.3": {
@@ -1814,6 +2321,9 @@
             "assemblyVersion": "4.61.3.0",
             "fileVersion": "4.61.3.0"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll": {}
         }
       },
       "Microsoft.IdentityModel.Abstractions/6.35.0": {
@@ -1822,6 +2332,9 @@
             "assemblyVersion": "6.35.0.0",
             "fileVersion": "6.35.0.41201"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {}
         }
       },
       "Microsoft.IdentityModel.JsonWebTokens/6.35.0": {
@@ -1836,6 +2349,9 @@
             "assemblyVersion": "6.35.0.0",
             "fileVersion": "6.35.0.41201"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
       "Microsoft.IdentityModel.Logging/6.35.0": {
@@ -1847,6 +2363,9 @@
             "assemblyVersion": "6.35.0.0",
             "fileVersion": "6.35.0.41201"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
       "Microsoft.IdentityModel.Protocols/6.35.0": {
@@ -1859,6 +2378,9 @@
             "assemblyVersion": "6.35.0.0",
             "fileVersion": "6.35.0.41201"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.IdentityModel.Protocols.dll": {}
         }
       },
       "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.35.0": {
@@ -1871,6 +2393,9 @@
             "assemblyVersion": "6.35.0.0",
             "fileVersion": "6.35.0.41201"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {}
         }
       },
       "Microsoft.IdentityModel.Tokens/6.35.0": {
@@ -1884,6 +2409,9 @@
             "assemblyVersion": "6.35.0.0",
             "fileVersion": "6.35.0.41201"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
       "Microsoft.Net.Http.Headers/2.3.0": {
@@ -1898,6 +2426,9 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "17.8.3.51904"
           }
+        },
+        "compile": {
+          "ref/net8.0/Microsoft.NET.StringTools.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/2.0.0": {},
@@ -1908,6 +2439,9 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration/8.0.7": {
@@ -1920,6 +2454,9 @@
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.53004"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Core/8.0.7": {
@@ -1933,6 +2470,9 @@
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.53004"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Design/8.0.7": {
@@ -1945,6 +2485,9 @@
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.53004"
           }
+        },
+        "compile": {
+          "lib/net8.0/dotnet-aspnet-codegenerator-design.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/8.0.7": {
@@ -1957,6 +2500,9 @@
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.53004"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Templating/8.0.7": {
@@ -1971,6 +2517,9 @@
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.53004"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Utils/8.0.7": {
@@ -1985,6 +2534,9 @@
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.53004"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/8.0.7": {
@@ -1997,6 +2549,9 @@
             "assemblyVersion": "8.0.7.0",
             "fileVersion": "8.0.724.53004"
           }
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
         }
       },
       "Microsoft.Web.Infrastructure/1.0.0": {
@@ -2005,6 +2560,9 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.20105.407"
           }
+        },
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
         }
       },
       "Microsoft.Win32.Registry/4.5.0": {
@@ -2027,6 +2585,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/Microsoft.Win32.SystemEvents.dll": {}
         }
       },
       "MimeKit/4.10.0": {
@@ -2040,6 +2601,9 @@
             "assemblyVersion": "4.10.0.0",
             "fileVersion": "4.10.0.0"
           }
+        },
+        "compile": {
+          "lib/net8.0/MimeKit.dll": {}
         }
       },
       "Mono.TextTemplating/2.3.1": {
@@ -2051,6 +2615,9 @@
             "assemblyVersion": "2.3.0.0",
             "fileVersion": "2.3.1.1"
           }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Mono.TextTemplating.dll": {}
         }
       },
       "Newtonsoft.Json/13.0.3": {
@@ -2059,6 +2626,9 @@
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.3.27908"
           }
+        },
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {}
         }
       },
       "Newtonsoft.Json.Bson/1.0.2": {
@@ -2070,6 +2640,26 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.2.22727"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
+        }
+      },
+      "NToastNotify/8.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.0",
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.3.0",
+          "Microsoft.AspNetCore.StaticFiles": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Embedded": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/NToastNotify.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/NToastNotify.dll": {}
         }
       },
       "NuGet.Common/6.11.0": {
@@ -2081,6 +2671,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/NuGet.Common.dll": {}
         }
       },
       "NuGet.Configuration/6.11.0": {
@@ -2093,6 +2686,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/NuGet.Configuration.dll": {}
         }
       },
       "NuGet.DependencyResolver.Core/6.11.0": {
@@ -2106,6 +2702,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/net5.0/NuGet.DependencyResolver.Core.dll": {}
         }
       },
       "NuGet.Frameworks/6.11.0": {
@@ -2114,6 +2713,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
         }
       },
       "NuGet.LibraryModel/6.11.0": {
@@ -2126,6 +2728,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/NuGet.LibraryModel.dll": {}
         }
       },
       "NuGet.Packaging/6.11.0": {
@@ -2140,6 +2745,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/net5.0/NuGet.Packaging.dll": {}
         }
       },
       "NuGet.ProjectModel/6.11.0": {
@@ -2151,6 +2759,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/net5.0/NuGet.ProjectModel.dll": {}
         }
       },
       "NuGet.Protocol/6.11.0": {
@@ -2162,6 +2773,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/net5.0/NuGet.Protocol.dll": {}
         }
       },
       "NuGet.Versioning/6.11.0": {
@@ -2170,6 +2784,9 @@
             "assemblyVersion": "6.11.0.119",
             "fileVersion": "6.11.0.119"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
       "System.Buffers/4.6.0": {},
@@ -2183,6 +2800,9 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.24.5302"
           }
+        },
+        "compile": {
+          "lib/net6.0/System.ClientModel.dll": {}
         }
       },
       "System.CodeDom/5.0.0": {
@@ -2191,6 +2811,9 @@
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.20.51904"
           }
+        },
+        "compile": {
+          "ref/netstandard2.0/System.CodeDom.dll": {}
         }
       },
       "System.Collections.Immutable/7.0.0": {},
@@ -2210,6 +2833,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Composition.AttributedModel.dll": {}
         }
       },
       "System.Composition.Convention/7.0.0": {
@@ -2221,6 +2847,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Composition.Convention.dll": {}
         }
       },
       "System.Composition.Hosting/7.0.0": {
@@ -2232,6 +2861,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Composition.Hosting.dll": {}
         }
       },
       "System.Composition.Runtime/7.0.0": {
@@ -2240,6 +2872,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Composition.Runtime.dll": {}
         }
       },
       "System.Composition.TypedParts/7.0.0": {
@@ -2253,6 +2888,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Composition.TypedParts.dll": {}
         }
       },
       "System.Configuration.ConfigurationManager/7.0.0": {
@@ -2266,6 +2904,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Data.DataSetExtensions/4.5.0": {},
@@ -2275,6 +2916,9 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.225.6610"
           }
+        },
+        "compile": {
+          "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
       "System.Diagnostics.EventLog/7.0.0": {},
@@ -2295,6 +2939,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Drawing.Common.dll": {}
         }
       },
       "System.Formats.Asn1/8.0.2": {},
@@ -2308,6 +2955,9 @@
             "assemblyVersion": "6.35.0.0",
             "fileVersion": "6.35.0.41201"
           }
+        },
+        "compile": {
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
       "System.IO.Pipelines/7.0.0": {},
@@ -2322,6 +2972,9 @@
             "assemblyVersion": "1.0.2.0",
             "fileVersion": "1.0.221.20802"
           }
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {}
         }
       },
       "System.Numerics.Vectors/4.5.0": {},
@@ -2340,6 +2993,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Reflection.MetadataLoadContext.dll": {}
         }
       },
       "System.Runtime/4.3.0": {
@@ -2393,6 +3049,9 @@
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.1024.46610"
           }
+        },
+        "compile": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {}
         }
       },
       "System.Security.Cryptography.ProtectedData/7.0.0": {
@@ -2409,6 +3068,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {}
         }
       },
       "System.Security.Cryptography.Xml/8.0.2": {
@@ -2431,6 +3093,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Security.Permissions.dll": {}
         }
       },
       "System.Security.Principal.Windows/5.0.0": {},
@@ -2472,6 +3137,9 @@
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
+        },
+        "compile": {
+          "lib/net7.0/System.Windows.Extensions.dll": {}
         }
       },
       "GameZone.Core/1.0.0": {
@@ -2483,6 +3151,9 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "compile": {
+          "GameZone.Core.dll": {}
         }
       },
       "GameZone.Repository/1.0.0": {
@@ -2498,6 +3169,9 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "compile": {
+          "GameZone.Repository.dll": {}
         }
       },
       "GameZone.Services/1.0.0": {
@@ -2515,7 +3189,1744 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
+        },
+        "compile": {
+          "GameZone.Services.dll": {}
         }
+      },
+      "Microsoft.AspNetCore.Antiforgery.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Antiforgery.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Authentication.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Authentication.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Authentication.BearerToken/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Authentication.BearerToken.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Authentication.Cookies.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Authentication.Cookies.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Authentication.Core.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Authentication.Core.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Authentication.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Authentication.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Authentication.OAuth/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Authentication.OAuth.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Authorization.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Authorization.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Authorization.Policy.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Authorization.Policy.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Components.Authorization/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Components.Authorization.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Components/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Components.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Components.Endpoints/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Components.Endpoints.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Components.Forms/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Components.Forms.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Components.Server/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Components.Server.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Components.Web/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Components.Web.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Connections.Abstractions/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Connections.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.CookiePolicy/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.CookiePolicy.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Cors/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Cors.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.DataProtection.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.DataProtection.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.DataProtection.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.DataProtection.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.DataProtection.Extensions/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.DataProtection.Extensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Diagnostics.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Diagnostics.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Diagnostics/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Diagnostics.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Diagnostics.HealthChecks/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Diagnostics.HealthChecks.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.HostFiltering/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.HostFiltering.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Hosting.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Hosting.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Hosting/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Hosting.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Hosting.Server.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Html.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Html.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Http.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Http.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Http.Connections.Common/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Http.Connections.Common.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Http.Connections/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Http.Connections.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Http.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Http.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Http.Extensions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Http.Extensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Http.Features.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Http.Features.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Http.Results/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Http.Results.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.HttpLogging/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.HttpLogging.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.HttpOverrides/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.HttpOverrides.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.HttpsPolicy/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.HttpsPolicy.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Identity.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Identity.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Localization/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Localization.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Localization.Routing/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Localization.Routing.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Metadata/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Metadata.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.ApiExplorer/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.ApiExplorer.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.Core.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.Core.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.Cors/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.Cors.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.DataAnnotations.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.DataAnnotations.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.Formatters.Json.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.Formatters.Json.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.Formatters.Xml/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.Formatters.Xml.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.Localization/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.Localization.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.Razor.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.RazorPages/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.RazorPages.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.TagHelpers.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.TagHelpers.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Mvc.ViewFeatures.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.OutputCaching/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.OutputCaching.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.RateLimiting/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.RateLimiting.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Razor.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Razor.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Razor.Runtime.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Razor.Runtime.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.RequestDecompression/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.RequestDecompression.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.ResponseCaching.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.ResponseCaching.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.ResponseCaching/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.ResponseCaching.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.ResponseCompression/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.ResponseCompression.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Rewrite/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Rewrite.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Routing.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Routing.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Routing.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Routing.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Server.HttpSys/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Server.HttpSys.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Server.IIS/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Server.IIS.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Server.IISIntegration/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Server.IISIntegration.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Server.Kestrel.Core/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Server.Kestrel.Core.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Server.Kestrel/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Server.Kestrel.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.Session/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.Session.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.SignalR.Common/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.SignalR.Common.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.SignalR.Core/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.SignalR.Core.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.SignalR/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.SignalR.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.StaticFiles.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.StaticFiles.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.WebSockets/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.WebSockets.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.AspNetCore.WebUtilities.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.AspNetCore.WebUtilities.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.CSharp.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.CSharp.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Caching.Memory.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Caching.Memory.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.Binder/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.CommandLine/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.CommandLine.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.EnvironmentVariables/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.EnvironmentVariables.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.Ini/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.Ini.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.Json/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.KeyPerFile/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.KeyPerFile.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.UserSecrets/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.UserSecrets.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Configuration.Xml/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Configuration.Xml.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Diagnostics.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Diagnostics.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Diagnostics/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Diagnostics.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Diagnostics.HealthChecks/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Features/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Features.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.FileProviders.Composite.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.FileProviders.Composite.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.FileProviders.Embedded.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.FileProviders.Embedded.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.FileProviders.Physical/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.FileSystemGlobbing.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Hosting.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Hosting.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Hosting/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Hosting.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Http/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Http.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Localization.Abstractions.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Localization.Abstractions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Localization.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Localization.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Logging.Configuration/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Logging.Configuration.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Logging.Console/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Logging.Debug/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Logging.Debug.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Logging.EventLog/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Logging.EventLog.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Logging.EventSource/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Logging.EventSource.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Logging.TraceSource/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Logging.TraceSource.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.ObjectPool.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.ObjectPool.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Options.ConfigurationExtensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.Options.DataAnnotations/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.Options.DataAnnotations.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Extensions.WebEncoders.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Extensions.WebEncoders.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.JSInterop/8.0.0.0": {
+        "compile": {
+          "Microsoft.JSInterop.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Net.Http.Headers.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Net.Http.Headers.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.VisualBasic.Core/13.0.0.0": {
+        "compile": {
+          "Microsoft.VisualBasic.Core.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.VisualBasic/10.0.0.0": {
+        "compile": {
+          "Microsoft.VisualBasic.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Win32.Primitives/8.0.0.0": {
+        "compile": {
+          "Microsoft.Win32.Primitives.dll": {}
+        },
+        "compileOnly": true
+      },
+      "Microsoft.Win32.Registry.Reference/8.0.0.0": {
+        "compile": {
+          "Microsoft.Win32.Registry.dll": {}
+        },
+        "compileOnly": true
+      },
+      "mscorlib/4.0.0.0": {
+        "compile": {
+          "mscorlib.dll": {}
+        },
+        "compileOnly": true
+      },
+      "netstandard/2.1.0.0": {
+        "compile": {
+          "netstandard.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.AppContext/8.0.0.0": {
+        "compile": {
+          "System.AppContext.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Buffers.Reference/8.0.0.0": {
+        "compile": {
+          "System.Buffers.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Collections.Concurrent/8.0.0.0": {
+        "compile": {
+          "System.Collections.Concurrent.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Collections/8.0.0.0": {
+        "compile": {
+          "System.Collections.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Collections.Immutable.Reference/8.0.0.0": {
+        "compile": {
+          "System.Collections.Immutable.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Collections.NonGeneric/8.0.0.0": {
+        "compile": {
+          "System.Collections.NonGeneric.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Collections.Specialized/8.0.0.0": {
+        "compile": {
+          "System.Collections.Specialized.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ComponentModel.Annotations.Reference/8.0.0.0": {
+        "compile": {
+          "System.ComponentModel.Annotations.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ComponentModel.DataAnnotations/4.0.0.0": {
+        "compile": {
+          "System.ComponentModel.DataAnnotations.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ComponentModel/8.0.0.0": {
+        "compile": {
+          "System.ComponentModel.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ComponentModel.EventBasedAsync/8.0.0.0": {
+        "compile": {
+          "System.ComponentModel.EventBasedAsync.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ComponentModel.Primitives/8.0.0.0": {
+        "compile": {
+          "System.ComponentModel.Primitives.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ComponentModel.TypeConverter/8.0.0.0": {
+        "compile": {
+          "System.ComponentModel.TypeConverter.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Configuration/4.0.0.0": {
+        "compile": {
+          "System.Configuration.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Console/8.0.0.0": {
+        "compile": {
+          "System.Console.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Core/4.0.0.0": {
+        "compile": {
+          "System.Core.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Data.Common/8.0.0.0": {
+        "compile": {
+          "System.Data.Common.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Data.DataSetExtensions.Reference/8.0.0.0": {
+        "compile": {
+          "System.Data.DataSetExtensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Data/4.0.0.0": {
+        "compile": {
+          "System.Data.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.Contracts/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.Contracts.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.Debug/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.Debug.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.EventLog.Reference/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.EventLog.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.FileVersionInfo/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.FileVersionInfo.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.Process/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.Process.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.StackTrace/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.StackTrace.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.TextWriterTraceListener/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.TextWriterTraceListener.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.Tools/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.Tools.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.TraceSource/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.TraceSource.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Diagnostics.Tracing/8.0.0.0": {
+        "compile": {
+          "System.Diagnostics.Tracing.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System/4.0.0.0": {
+        "compile": {
+          "System.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Drawing/4.0.0.0": {
+        "compile": {
+          "System.Drawing.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Drawing.Primitives/8.0.0.0": {
+        "compile": {
+          "System.Drawing.Primitives.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Dynamic.Runtime/8.0.0.0": {
+        "compile": {
+          "System.Dynamic.Runtime.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Formats.Asn1.Reference/8.0.0.0": {
+        "compile": {
+          "System.Formats.Asn1.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Formats.Tar/8.0.0.0": {
+        "compile": {
+          "System.Formats.Tar.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Globalization.Calendars/8.0.0.0": {
+        "compile": {
+          "System.Globalization.Calendars.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Globalization/8.0.0.0": {
+        "compile": {
+          "System.Globalization.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Globalization.Extensions/8.0.0.0": {
+        "compile": {
+          "System.Globalization.Extensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.Compression.Brotli/8.0.0.0": {
+        "compile": {
+          "System.IO.Compression.Brotli.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.Compression/8.0.0.0": {
+        "compile": {
+          "System.IO.Compression.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.Compression.FileSystem/4.0.0.0": {
+        "compile": {
+          "System.IO.Compression.FileSystem.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.Compression.ZipFile/8.0.0.0": {
+        "compile": {
+          "System.IO.Compression.ZipFile.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO/8.0.0.0": {
+        "compile": {
+          "System.IO.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.FileSystem.AccessControl/8.0.0.0": {
+        "compile": {
+          "System.IO.FileSystem.AccessControl.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.FileSystem/8.0.0.0": {
+        "compile": {
+          "System.IO.FileSystem.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.FileSystem.DriveInfo/8.0.0.0": {
+        "compile": {
+          "System.IO.FileSystem.DriveInfo.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.FileSystem.Primitives/8.0.0.0": {
+        "compile": {
+          "System.IO.FileSystem.Primitives.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.FileSystem.Watcher/8.0.0.0": {
+        "compile": {
+          "System.IO.FileSystem.Watcher.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.IsolatedStorage/8.0.0.0": {
+        "compile": {
+          "System.IO.IsolatedStorage.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.MemoryMappedFiles/8.0.0.0": {
+        "compile": {
+          "System.IO.MemoryMappedFiles.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.Pipelines.Reference/8.0.0.0": {
+        "compile": {
+          "System.IO.Pipelines.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.Pipes.AccessControl/8.0.0.0": {
+        "compile": {
+          "System.IO.Pipes.AccessControl.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.Pipes/8.0.0.0": {
+        "compile": {
+          "System.IO.Pipes.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.IO.UnmanagedMemoryStream/8.0.0.0": {
+        "compile": {
+          "System.IO.UnmanagedMemoryStream.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Linq/8.0.0.0": {
+        "compile": {
+          "System.Linq.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Linq.Expressions/8.0.0.0": {
+        "compile": {
+          "System.Linq.Expressions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Linq.Parallel/8.0.0.0": {
+        "compile": {
+          "System.Linq.Parallel.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Linq.Queryable/8.0.0.0": {
+        "compile": {
+          "System.Linq.Queryable.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Memory.Reference/8.0.0.0": {
+        "compile": {
+          "System.Memory.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net/4.0.0.0": {
+        "compile": {
+          "System.Net.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Http/8.0.0.0": {
+        "compile": {
+          "System.Net.Http.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Http.Json/8.0.0.0": {
+        "compile": {
+          "System.Net.Http.Json.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.HttpListener/8.0.0.0": {
+        "compile": {
+          "System.Net.HttpListener.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Mail/8.0.0.0": {
+        "compile": {
+          "System.Net.Mail.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.NameResolution/8.0.0.0": {
+        "compile": {
+          "System.Net.NameResolution.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.NetworkInformation/8.0.0.0": {
+        "compile": {
+          "System.Net.NetworkInformation.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Ping/8.0.0.0": {
+        "compile": {
+          "System.Net.Ping.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Primitives/8.0.0.0": {
+        "compile": {
+          "System.Net.Primitives.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Quic/8.0.0.0": {
+        "compile": {
+          "System.Net.Quic.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Requests/8.0.0.0": {
+        "compile": {
+          "System.Net.Requests.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Security/8.0.0.0": {
+        "compile": {
+          "System.Net.Security.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.ServicePoint/8.0.0.0": {
+        "compile": {
+          "System.Net.ServicePoint.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.Sockets/8.0.0.0": {
+        "compile": {
+          "System.Net.Sockets.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.WebClient/8.0.0.0": {
+        "compile": {
+          "System.Net.WebClient.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.WebHeaderCollection/8.0.0.0": {
+        "compile": {
+          "System.Net.WebHeaderCollection.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.WebProxy/8.0.0.0": {
+        "compile": {
+          "System.Net.WebProxy.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.WebSockets.Client/8.0.0.0": {
+        "compile": {
+          "System.Net.WebSockets.Client.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Net.WebSockets/8.0.0.0": {
+        "compile": {
+          "System.Net.WebSockets.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Numerics/4.0.0.0": {
+        "compile": {
+          "System.Numerics.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Numerics.Vectors.Reference/8.0.0.0": {
+        "compile": {
+          "System.Numerics.Vectors.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ObjectModel/8.0.0.0": {
+        "compile": {
+          "System.ObjectModel.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection.DispatchProxy/8.0.0.0": {
+        "compile": {
+          "System.Reflection.DispatchProxy.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection/8.0.0.0": {
+        "compile": {
+          "System.Reflection.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection.Emit/8.0.0.0": {
+        "compile": {
+          "System.Reflection.Emit.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection.Emit.ILGeneration/8.0.0.0": {
+        "compile": {
+          "System.Reflection.Emit.ILGeneration.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection.Emit.Lightweight/8.0.0.0": {
+        "compile": {
+          "System.Reflection.Emit.Lightweight.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection.Extensions/8.0.0.0": {
+        "compile": {
+          "System.Reflection.Extensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection.Metadata.Reference/8.0.0.0": {
+        "compile": {
+          "System.Reflection.Metadata.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection.Primitives/8.0.0.0": {
+        "compile": {
+          "System.Reflection.Primitives.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Reflection.TypeExtensions/8.0.0.0": {
+        "compile": {
+          "System.Reflection.TypeExtensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Resources.Reader/8.0.0.0": {
+        "compile": {
+          "System.Resources.Reader.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Resources.ResourceManager/8.0.0.0": {
+        "compile": {
+          "System.Resources.ResourceManager.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Resources.Writer/8.0.0.0": {
+        "compile": {
+          "System.Resources.Writer.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.CompilerServices.Unsafe.Reference/8.0.0.0": {
+        "compile": {
+          "System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.CompilerServices.VisualC/8.0.0.0": {
+        "compile": {
+          "System.Runtime.CompilerServices.VisualC.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Reference/8.0.0.0": {
+        "compile": {
+          "System.Runtime.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Extensions/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Extensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Handles/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Handles.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.InteropServices/8.0.0.0": {
+        "compile": {
+          "System.Runtime.InteropServices.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.InteropServices.JavaScript/8.0.0.0": {
+        "compile": {
+          "System.Runtime.InteropServices.JavaScript.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/8.0.0.0": {
+        "compile": {
+          "System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Intrinsics/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Intrinsics.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Loader/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Loader.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Numerics/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Numerics.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Serialization/4.0.0.0": {
+        "compile": {
+          "System.Runtime.Serialization.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Serialization.Formatters/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Serialization.Formatters.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Serialization.Json/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Serialization.Json.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Serialization.Primitives/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.Serialization.Xml/8.0.0.0": {
+        "compile": {
+          "System.Runtime.Serialization.Xml.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.AccessControl.Reference/8.0.0.0": {
+        "compile": {
+          "System.Security.AccessControl.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Claims/8.0.0.0": {
+        "compile": {
+          "System.Security.Claims.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.Algorithms/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.Cng.Reference/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.Cng.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.Csp/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.Csp.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.Encoding/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.Encoding.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.OpenSsl/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.OpenSsl.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.Primitives/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.Primitives.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.X509Certificates/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Cryptography.Xml.Reference/8.0.0.0": {
+        "compile": {
+          "System.Security.Cryptography.Xml.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security/4.0.0.0": {
+        "compile": {
+          "System.Security.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Principal/8.0.0.0": {
+        "compile": {
+          "System.Security.Principal.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.Principal.Windows.Reference/8.0.0.0": {
+        "compile": {
+          "System.Security.Principal.Windows.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Security.SecureString/8.0.0.0": {
+        "compile": {
+          "System.Security.SecureString.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ServiceModel.Web/4.0.0.0": {
+        "compile": {
+          "System.ServiceModel.Web.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ServiceProcess/4.0.0.0": {
+        "compile": {
+          "System.ServiceProcess.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Text.Encoding.CodePages.Reference/8.0.0.0": {
+        "compile": {
+          "System.Text.Encoding.CodePages.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Text.Encoding.Reference/8.0.0.0": {
+        "compile": {
+          "System.Text.Encoding.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Text.Encoding.Extensions/8.0.0.0": {
+        "compile": {
+          "System.Text.Encoding.Extensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Text.Encodings.Web.Reference/8.0.0.0": {
+        "compile": {
+          "System.Text.Encodings.Web.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Text.Json.Reference/8.0.0.0": {
+        "compile": {
+          "System.Text.Json.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Text.RegularExpressions/8.0.0.0": {
+        "compile": {
+          "System.Text.RegularExpressions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.Channels.Reference/8.0.0.0": {
+        "compile": {
+          "System.Threading.Channels.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading/8.0.0.0": {
+        "compile": {
+          "System.Threading.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.Overlapped/8.0.0.0": {
+        "compile": {
+          "System.Threading.Overlapped.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.RateLimiting/8.0.0.0": {
+        "compile": {
+          "System.Threading.RateLimiting.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.Tasks.Dataflow.Reference/8.0.0.0": {
+        "compile": {
+          "System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.Tasks/8.0.0.0": {
+        "compile": {
+          "System.Threading.Tasks.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.Tasks.Extensions.Reference/8.0.0.0": {
+        "compile": {
+          "System.Threading.Tasks.Extensions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.Tasks.Parallel/8.0.0.0": {
+        "compile": {
+          "System.Threading.Tasks.Parallel.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.Thread/8.0.0.0": {
+        "compile": {
+          "System.Threading.Thread.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.ThreadPool/8.0.0.0": {
+        "compile": {
+          "System.Threading.ThreadPool.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Threading.Timer/8.0.0.0": {
+        "compile": {
+          "System.Threading.Timer.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Transactions/4.0.0.0": {
+        "compile": {
+          "System.Transactions.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Transactions.Local/8.0.0.0": {
+        "compile": {
+          "System.Transactions.Local.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.ValueTuple/8.0.0.0": {
+        "compile": {
+          "System.ValueTuple.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Web/4.0.0.0": {
+        "compile": {
+          "System.Web.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Web.HttpUtility/8.0.0.0": {
+        "compile": {
+          "System.Web.HttpUtility.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Windows/4.0.0.0": {
+        "compile": {
+          "System.Windows.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml/4.0.0.0": {
+        "compile": {
+          "System.Xml.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml.Linq/4.0.0.0": {
+        "compile": {
+          "System.Xml.Linq.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml.ReaderWriter/8.0.0.0": {
+        "compile": {
+          "System.Xml.ReaderWriter.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml.Serialization/4.0.0.0": {
+        "compile": {
+          "System.Xml.Serialization.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml.XDocument/8.0.0.0": {
+        "compile": {
+          "System.Xml.XDocument.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml.XmlDocument/8.0.0.0": {
+        "compile": {
+          "System.Xml.XmlDocument.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml.XmlSerializer/8.0.0.0": {
+        "compile": {
+          "System.Xml.XmlSerializer.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml.XPath/8.0.0.0": {
+        "compile": {
+          "System.Xml.XPath.dll": {}
+        },
+        "compileOnly": true
+      },
+      "System.Xml.XPath.XDocument/8.0.0.0": {
+        "compile": {
+          "System.Xml.XPath.XDocument.dll": {}
+        },
+        "compileOnly": true
+      },
+      "WindowsBase/4.0.0.0": {
+        "compile": {
+          "WindowsBase.dll": {}
+        },
+        "compileOnly": true
       }
     }
   },
@@ -2973,6 +5384,13 @@
       "path": "microsoft.aspnetcore.authentication.core/2.3.0",
       "hashPath": "microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authentication.Google/8.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+ytq0YfuQ5K8YnvfglBvYxxchsPpedeYlg7gYZY6oFvPIWqA9BjIabexLKAYfL6MewKrOJbRIgWvfx0pONnmPQ==",
+      "path": "microsoft.aspnetcore.authentication.google/8.0.12",
+      "hashPath": "microsoft.aspnetcore.authentication.google.8.0.12.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authorization/2.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3127,12 +5545,19 @@
       "path": "microsoft.aspnetcore.mvc.razor/2.3.0",
       "hashPath": "microsoft.aspnetcore.mvc.razor.2.3.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Mvc.Razor.Extensions/2.3.0": {
+    "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dDQMZ+wDnMsodIuhGLeMrpj4tZ6U0E+PLMarUiwJfHRwvTckBt2d5uZkbZ0MotH2DkxXcCUMhM1reAWJrh840w==",
-      "path": "microsoft.aspnetcore.mvc.razor.extensions/2.3.0",
-      "hashPath": "microsoft.aspnetcore.mvc.razor.extensions.2.3.0.nupkg.sha512"
+      "sha512": "sha512-M0h+ChPgydX2xY17agiphnAVa/Qh05RAP8eeuqGGhQKT10claRBlLNO6d2/oSV8zy0RLHzwLnNZm5xuC/gckGA==",
+      "path": "microsoft.aspnetcore.mvc.razor.extensions/6.0.0",
+      "hashPath": "microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bf4kbla/8Qiu53MgFPz1u3H1ThoookPpFy+Ya9Q9p531wXK1pZ3tfz/Gtx8SKy41yz99jhZHTUM1QqLl7eJRgQ==",
+      "path": "microsoft.aspnetcore.mvc.razor.runtimecompilation/6.0.0",
+      "hashPath": "microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.TagHelpers/2.3.0": {
       "type": "package",
@@ -3189,6 +5614,13 @@
       "sha512": "sha512-ZkFpUrSmp6TocxZLBEX3IBv5dPMbQuMs6L/BPl0WRfn32UVOtNYJQ0bLdh3cL9LMV0rmTW/5R0w8CBYxr0AOUw==",
       "path": "microsoft.aspnetcore.routing.abstractions/2.3.0",
       "hashPath": "microsoft.aspnetcore.routing.abstractions.2.3.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.StaticFiles/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-byZDrjir6Co5EoWbraQyG0qbPCUG6XgGYQstipMF9lucOAjq/mqnIyt8B8iMWnin/ghZoOln9Y01af4rUAwOhA==",
+      "path": "microsoft.aspnetcore.staticfiles/2.2.0",
+      "hashPath": "microsoft.aspnetcore.staticfiles.2.2.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.WebUtilities/2.3.0": {
       "type": "package",
@@ -3441,6 +5873,13 @@
       "sha512": "sha512-ynMjdZ5B3Fd3A9GxJaNhIcTrjLY1bXDQltyVIMVOxbT0ssTOCpFYWc977bVBAocB62fYWu/RN6/1HLnX/HjVuQ==",
       "path": "microsoft.extensions.fileproviders.composite/8.0.0",
       "hashPath": "microsoft.extensions.fileproviders.composite.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Embedded/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9uQbDTqX1MidhoZFUSK1JItt74IapEadFDOIWAlBIKxr3O/ZEWLWkLYGlgUeP1Dkyog6/CB7h1EAU3xADYZ/lA==",
+      "path": "microsoft.extensions.fileproviders.embedded/6.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.embedded.6.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.FileSystemGlobbing/8.0.0": {
       "type": "package",
@@ -3714,6 +6153,13 @@
       "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    },
+    "NToastNotify/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dLTBCrbWXGMhwjGnkZBcQFyc6pp1caKfe3vqQF1A98nv8EH6kWhJMGmJzPnUgiHo2ZGAQRfvx76XQjVNEGKnzw==",
+      "path": "ntoastnotify/8.0.0",
+      "hashPath": "ntoastnotify.8.0.0.nupkg.sha512"
     },
     "NuGet.Common/6.11.0": {
       "type": "package",
@@ -4084,6 +6530,1451 @@
     },
     "GameZone.Services/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Antiforgery.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.BearerToken/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.Cookies.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.Core.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.OAuth/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authorization.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authorization.Policy.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components.Authorization/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components.Endpoints/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components.Forms/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components.Server/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components.Web/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Connections.Abstractions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.CookiePolicy/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Cors/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.DataProtection.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.DataProtection.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.DataProtection.Extensions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Diagnostics.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Diagnostics/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Diagnostics.HealthChecks/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.HostFiltering/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Hosting.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Hosting/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Hosting.Server.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Html.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Connections.Common/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Connections/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Extensions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Features.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Http.Results/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.HttpLogging/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.HttpOverrides/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.HttpsPolicy/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Identity.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Localization/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Localization.Routing/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Metadata/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.ApiExplorer/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Core.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Cors/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.DataAnnotations.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Formatters.Json.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Formatters.Xml/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Localization/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.RazorPages/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.TagHelpers.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.ViewFeatures.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.OutputCaching/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.RateLimiting/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Razor.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Razor.Runtime.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.RequestDecompression/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.ResponseCaching.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.ResponseCaching/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.ResponseCompression/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Rewrite/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Routing.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Routing.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Server.HttpSys/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Server.IIS/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Server.IISIntegration/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Server.Kestrel.Core/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Server.Kestrel/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Session/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.SignalR.Common/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.SignalR.Core/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.SignalR/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.SignalR.Protocols.Json/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.StaticFiles.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.WebSockets/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.WebUtilities.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Caching.Memory.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.Binder/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.CommandLine/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.EnvironmentVariables/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.Ini/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.Json/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.KeyPerFile/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.UserSecrets/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.Xml/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Diagnostics.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Diagnostics/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Diagnostics.HealthChecks/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Features/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.FileProviders.Composite.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.FileProviders.Embedded.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.FileProviders.Physical/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.FileSystemGlobbing.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Hosting.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Hosting/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Http/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Localization.Abstractions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Localization.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.Configuration/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.Console/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.Debug/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.EventLog/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.EventSource/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Logging.TraceSource/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.ObjectPool.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Options.DataAnnotations/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.WebEncoders.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.JSInterop/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Net.Http.Headers.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.VisualBasic.Core/13.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.VisualBasic/10.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Win32.Primitives/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Win32.Registry.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "mscorlib/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "netstandard/2.1.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.AppContext/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Buffers.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Collections.Concurrent/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Collections/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Collections.Immutable.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Collections.NonGeneric/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Collections.Specialized/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ComponentModel.Annotations.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ComponentModel.DataAnnotations/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ComponentModel/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ComponentModel.EventBasedAsync/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ComponentModel.Primitives/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ComponentModel.TypeConverter/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Console/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Core/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Data.Common/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Data.DataSetExtensions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Data/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.Contracts/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.Debug/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.EventLog.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.FileVersionInfo/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.Process/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.StackTrace/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.TextWriterTraceListener/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.Tools/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.TraceSource/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Diagnostics.Tracing/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Drawing/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Drawing.Primitives/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Dynamic.Runtime/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Formats.Asn1.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Formats.Tar/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Globalization.Calendars/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Globalization/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Globalization.Extensions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Compression.Brotli/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Compression/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Compression.FileSystem/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Compression.ZipFile/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.FileSystem.AccessControl/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.FileSystem/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.FileSystem.DriveInfo/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.FileSystem.Primitives/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.FileSystem.Watcher/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.IsolatedStorage/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.MemoryMappedFiles/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Pipelines.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Pipes.AccessControl/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Pipes/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.UnmanagedMemoryStream/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Linq/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Linq.Expressions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Linq.Parallel/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Linq.Queryable/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Memory.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Http/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Http.Json/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.HttpListener/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Mail/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.NameResolution/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.NetworkInformation/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Ping/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Primitives/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Quic/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Requests/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Security/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.ServicePoint/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Sockets/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.WebClient/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.WebHeaderCollection/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.WebProxy/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.WebSockets.Client/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.WebSockets/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Numerics/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Numerics.Vectors.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ObjectModel/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.DispatchProxy/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.Emit/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.Emit.ILGeneration/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.Emit.Lightweight/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.Extensions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.Metadata.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.Primitives/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reflection.TypeExtensions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Resources.Reader/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Resources.ResourceManager/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Resources.Writer/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.CompilerServices.Unsafe.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.CompilerServices.VisualC/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Extensions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Handles/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.InteropServices/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.InteropServices.JavaScript/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.InteropServices.RuntimeInformation/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Intrinsics/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Loader/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Numerics/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization.Formatters/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization.Json/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization.Primitives/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization.Xml/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.AccessControl.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Claims/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.Algorithms/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.Cng.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.Csp/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.Encoding/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.OpenSsl/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.Primitives/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.X509Certificates/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Cryptography.Xml.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Principal/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.Principal.Windows.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Security.SecureString/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ServiceModel.Web/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ServiceProcess/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.Encoding.CodePages.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.Encoding.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.Encoding.Extensions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.Encodings.Web.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.Json.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Text.RegularExpressions/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.Channels.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.Overlapped/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.RateLimiting/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.Tasks.Dataflow.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.Tasks/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.Tasks.Extensions.Reference/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.Tasks.Parallel/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.Thread/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.ThreadPool/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Threading.Timer/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Transactions/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Transactions.Local/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.ValueTuple/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Web.HttpUtility/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Windows/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml.Linq/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml.ReaderWriter/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml.Serialization/4.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml.XDocument/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml.XmlDocument/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml.XmlSerializer/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml.XPath/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Xml.XPath.XDocument/8.0.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WindowsBase/4.0.0.0": {
+      "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     }

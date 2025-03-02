@@ -171,6 +171,69 @@ namespace GameZone.MVC.Controllers
         }
 
         [HttpGet]
+        public IActionResult GoogleLogin(string returnUrl = null!)
+        {
+            var redirectUrl = Url.Action("GoogleResponse", "Account", new { ReturnUrl = returnUrl });
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties("Google", redirectUrl);
+            return new ChallengeResult("Google", properties);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GoogleResponse(string returnUrl = null!, string remoteError = null!)
+        {
+            if (!string.IsNullOrEmpty(remoteError))
+            {
+                ModelState.AddModelError(string.Empty, $"Error from external provider: {remoteError}");
+                return RedirectToAction(nameof(Login));
+            }
+
+            var info = await _signInManager.GetExternalLoginInfoAsync();
+            if (info is null)
+                return RedirectToAction(nameof(Login));
+
+            var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
+            if (result.Succeeded)
+                return RedirectToAction(nameof(Index), "Home");
+
+            var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+            if (email is not null)
+            {
+                var user = await _userManager.FindByEmailAsync(email);
+                if (user == null)
+                {
+                    user = new ApplicationUser
+                    {
+                        UserName = email,
+                        Email = email
+                    };
+
+                    var createResult = await _userManager.CreateAsync(user);
+                    if (createResult.Succeeded)
+                    {
+                        await _userManager.AddToRoleAsync(user, "User");
+
+                        await _userManager.AddLoginAsync(user, info);
+                        await _signInManager.SignInAsync(user, isPersistent: false);
+                        return RedirectToAction(nameof(Index), "Home");
+                    }
+                }
+                else
+                {
+                    if (!await _userManager.IsInRoleAsync(user, "User"))
+                    {
+                        await _userManager.AddToRoleAsync(user, "User");
+                    }
+
+                    await _userManager.AddLoginAsync(user, info);
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction(nameof(Index), "Home");
+                }
+            }
+
+            return RedirectToAction(nameof(Login));
+        }
+
+        [HttpGet]
         public IActionResult ForgetPassword()
         {
             return View();

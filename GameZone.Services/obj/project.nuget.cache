@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i6Dvs/VUmKg=",
+  "dgSpecHash": "8FG6iTV+VnM=",
   "success": true,
-  "projectFilePath": "D:\\programming\\Backend\\MVC Projects\\GameZone(MVC)\\GameZone.Services\\GameZone.Services.csproj",
+  "projectFilePath": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.Services\\GameZone.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\atwam\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\atwam\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

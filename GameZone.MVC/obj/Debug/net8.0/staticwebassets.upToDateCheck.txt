@@ -1,3 +1,5 @@
+C:\Users\atwam\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroot\noty.js
+C:\Users\atwam\.nuget\packages\ntoastnotify\8.0.0\contentFiles\any\net6.0\wwwroot\toastr.js
 wwwroot\assets\img\games\1acaa086-3d78-4407-8904-f1ceb8cb722a.jpeg
 wwwroot\assets\img\games\1f404995-3727-4f9f-a48c-513d62473f8e.jpeg
 wwwroot\assets\img\games\3d5ac2c2-fc98-4c4d-8b5d-6ced9d80ee6c.jpeg
