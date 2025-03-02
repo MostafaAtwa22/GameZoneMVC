@@ -216,6 +216,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\users\a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\users\c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>GameZone.MVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GameZone.MVC</BasePath>
+      <RelativePath>assets/img/users/c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>e3puwxywtk</Fingerprint>
+      <Integrity>dsERyWogMbqH4tZSN1KtxpMAitAAyO6mUakqpuVxZgs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\users\c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\bootstrap-icons\bootstrap-icons.svg'))">
       <SourceType>Package</SourceType>
       <SourceId>GameZone.MVC</SourceId>
@@ -516,8 +534,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4p7rr4442j</Fingerprint>
-      <Integrity>SNWK4zUZqFqjXrp4LaVaDjaUm/eHe3LV60jCJDbqPmo=</Integrity>
+      <Fingerprint>3urxldop3p</Fingerprint>
+      <Integrity>1auecwy+UZjiPZnWtbTUZn4YtnRdfb9c0lFgVR3niAE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\user-index.js'))</OriginalItemSpec>

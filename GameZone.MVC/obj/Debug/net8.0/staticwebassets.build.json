@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/XshiaX++atNt2rvAzN2/s+YV8TENxlLUuHnzF/+WqU=",
+  "Hash": "dan3buMb1T8gRz6RDGzSA+wrspbZXpbaiAYbOUCCVVo=",
   "Source": "GameZone.MVC",
   "BasePath": "_content/GameZone.MVC",
   "Mode": "Default",
@@ -395,6 +395,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\users\\a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg"
     },
     {
+      "Identity": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\wwwroot\\assets\\img\\users\\c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg",
+      "SourceId": "GameZone.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\wwwroot\\",
+      "BasePath": "_content/GameZone.MVC",
+      "RelativePath": "assets/img/users/c1d183df-3d4c-4e05-9396-bfb6830fa8c1#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e3puwxywtk",
+      "Integrity": "dsERyWogMbqH4tZSN1KtxpMAitAAyO6mUakqpuVxZgs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\users\\c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\wwwroot\\bootstrap-icons\\bootstrap-icons.svg",
       "SourceId": "GameZone.MVC",
       "SourceType": "Discovered",
@@ -724,8 +745,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4p7rr4442j",
-      "Integrity": "SNWK4zUZqFqjXrp4LaVaDjaUm/eHe3LV60jCJDbqPmo=",
+      "Fingerprint": "3urxldop3p",
+      "Integrity": "1auecwy+UZjiPZnWtbTUZn4YtnRdfb9c0lFgVR3niAE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\user-index.js"
@@ -3072,6 +3093,88 @@
       ]
     },
     {
+      "Route": "assets/img/users/c1d183df-3d4c-4e05-9396-bfb6830fa8c1.e3puwxywtk.jpeg",
+      "AssetFile": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\wwwroot\\assets\\img\\users\\c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dsERyWogMbqH4tZSN1KtxpMAitAAyO6mUakqpuVxZgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 20:31:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e3puwxywtk"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/users/c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dsERyWogMbqH4tZSN1KtxpMAitAAyO6mUakqpuVxZgs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/users/c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg",
+      "AssetFile": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\wwwroot\\assets\\img\\users\\c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dsERyWogMbqH4tZSN1KtxpMAitAAyO6mUakqpuVxZgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 20:31:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dsERyWogMbqH4tZSN1KtxpMAitAAyO6mUakqpuVxZgs="
+        }
+      ]
+    },
+    {
       "Route": "bootstrap-icons/bootstrap-icons.0gvitdch0g.svg",
       "AssetFile": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\wwwroot\\bootstrap-icons\\bootstrap-icons.svg",
       "Selectors": [],
@@ -4466,7 +4569,7 @@
       ]
     },
     {
-      "Route": "js/user-index.4p7rr4442j.js",
+      "Route": "js/user-index.3urxldop3p.js",
       "AssetFile": "C:\\Users\\atwam\\Source\\Repos\\GameZoneMVC\\GameZone.MVC\\wwwroot\\js\\user-index.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4476,7 +4579,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1551"
+          "Value": "1545"
         },
         {
           "Name": "Content-Type",
@@ -4484,11 +4587,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SNWK4zUZqFqjXrp4LaVaDjaUm/eHe3LV60jCJDbqPmo=\""
+          "Value": "\"1auecwy+UZjiPZnWtbTUZn4YtnRdfb9c0lFgVR3niAE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 20:03:35 GMT"
+          "Value": "Sun, 02 Mar 2025 20:33:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4498,7 +4601,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4p7rr4442j"
+          "Value": "3urxldop3p"
         },
         {
           "Name": "label",
@@ -4506,7 +4609,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SNWK4zUZqFqjXrp4LaVaDjaUm/eHe3LV60jCJDbqPmo="
+          "Value": "sha256-1auecwy+UZjiPZnWtbTUZn4YtnRdfb9c0lFgVR3niAE="
         }
       ]
     },
@@ -4521,7 +4624,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1551"
+          "Value": "1545"
         },
         {
           "Name": "Content-Type",
@@ -4529,11 +4632,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SNWK4zUZqFqjXrp4LaVaDjaUm/eHe3LV60jCJDbqPmo=\""
+          "Value": "\"1auecwy+UZjiPZnWtbTUZn4YtnRdfb9c0lFgVR3niAE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Mar 2025 20:03:35 GMT"
+          "Value": "Sun, 02 Mar 2025 20:33:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4543,7 +4646,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SNWK4zUZqFqjXrp4LaVaDjaUm/eHe3LV60jCJDbqPmo="
+          "Value": "sha256-1auecwy+UZjiPZnWtbTUZn4YtnRdfb9c0lFgVR3niAE="
         }
       ]
     },

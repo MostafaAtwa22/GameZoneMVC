@@ -3,7 +3,7 @@ using GameZone.Services.ViewModels.RolesVM;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+using NToastNotify;
 
 namespace GameZone.MVC.Controllers
 {
@@ -12,12 +12,16 @@ namespace GameZone.MVC.Controllers
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IToastNotification _toastNotification;
 
+        [ActivatorUtilitiesConstructor]
         public RolesController(RoleManager<IdentityRole> roleManager,
-            UserManager<ApplicationUser> userManager) 
+            UserManager<ApplicationUser> userManager,
+            IToastNotification toastNotification)
         {
             _roleManager = roleManager;
             _userManager = userManager;
+            _toastNotification = toastNotification;
         }
 
         [HttpGet]
@@ -63,7 +67,10 @@ namespace GameZone.MVC.Controllers
                 var result = await _roleManager.CreateAsync(role);
 
                 if (result.Succeeded)
+                {
+                    _toastNotification.AddSuccessToastMessage("A new Role Created Successfully !!");
                     return RedirectToAction(nameof(Index));
+                }
 
                 foreach (var item in result.Errors)
                     ModelState.AddModelError(string.Empty, item.Description);
@@ -82,7 +89,10 @@ namespace GameZone.MVC.Controllers
             var res = await _roleManager.DeleteAsync(role);
 
             if (res.Succeeded)
+            {
+                _toastNotification.AddErrorToastMessage("You Delete the Role Successfully !!");
                 return Ok(role);
+            }
 
             return BadRequest("Can't delete this role !!");
         }

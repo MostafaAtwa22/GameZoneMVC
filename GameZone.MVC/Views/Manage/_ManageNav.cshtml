@@ -19,14 +19,10 @@
        asp-controller="Manage" asp-action="ChangePassword">
         Password
     </a>
-
-    @if (hasExternalLogins)
-    {
-        <a class="list-group-item list-group-item-action @ManageNavPages.ExternalLoginsNavClass(ViewContext)"
-           asp-controller="Manage" asp-action="ExternalLogins">
-            External Logins
-        </a>
-    }
+    <a class="list-group-item list-group-item-action @ManageNavPages.SetPasswordNavClass(ViewContext)"
+       asp-controller="Manage" asp-action="SetPassword">
+        Set Password
+    </a>
     <a class="list-group-item list-group-item-action @ManageNavPages.PersonalDataNavClass(ViewContext)"
        asp-controller="Manage" asp-action="PersonalData">
         Personal Data

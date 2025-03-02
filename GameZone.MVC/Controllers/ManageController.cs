@@ -4,8 +4,9 @@ using GameZone.Services.ViewModels.ManagesVM;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using NToastNotify;
 using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace GameZone.MVC.Controllers
 {
@@ -13,10 +14,17 @@ namespace GameZone.MVC.Controllers
     public class ManageController : Controller
     {
         private readonly IManageServices _manageServices;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IToastNotification _toastNotification;
 
-        public ManageController(IManageServices manageServices)
+        [ActivatorUtilitiesConstructor]
+        public ManageController(IManageServices manageServices,
+            UserManager<ApplicationUser> userManager,
+            IToastNotification toastNotification)
         {
             _manageServices = manageServices;
+            _userManager = userManager;
+            _toastNotification = toastNotification;
         }
 
         [HttpGet]
@@ -54,8 +62,9 @@ namespace GameZone.MVC.Controllers
             var user = await _manageServices.Update(appUser);
 
             if (user is null)
-                return BadRequest();
+                return BadRequest("The User Name is already exists !!");
 
+            _toastNotification.AddSuccessToastMessage("The Profile Updated Successfully !!");
             return RedirectToAction(nameof(Index));
         }
 
@@ -98,7 +107,10 @@ namespace GameZone.MVC.Controllers
                 var email = await _manageServices.Email(model, user.Email!);
 
                 if (email is not null)
+                {
+                    _toastNotification.AddSuccessToastMessage("The Email Updated Successfully !!");
                     return RedirectToAction(nameof(Index));
+                }
                 ModelState.AddModelError(string.Empty, "This email is already used !!");
             }
 
@@ -124,7 +136,10 @@ namespace GameZone.MVC.Controllers
 
                 var result = await _manageServices.ChangePassword(userId!, model);
                 if (result)
+                {
+                    _toastNotification.AddSuccessToastMessage("The Password Updated Successfully !!");
                     return RedirectToAction(nameof(Index));
+                }
                 ModelState.AddModelError(string.Empty, "The old password is incorrect !!");
             }
             return View(model);
@@ -159,6 +174,7 @@ namespace GameZone.MVC.Controllers
             if (result is null)
                 return NotFound("User not found.");
 
+            _toastNotification.AddSuccessToastMessage("The Personal Data Downloaded Successfully !!");
             return File(result.Value.FileContent, result.Value.ContentType, result.Value.FileName);
         }
 
@@ -183,10 +199,56 @@ namespace GameZone.MVC.Controllers
                 var result = await _manageServices.DeletePersonData(model);
 
                 if (result)
+                {
+                    _toastNotification.AddErrorToastMessage("Your Account has been Deleted Successfully !!");
                     return RedirectToAction(nameof(Index), "Home");
+                }
 
                 ModelState.AddModelError(string.Empty, "The Password is incorrect !!");
             }
+
+            return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SetPassword()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction(nameof(Login));
+            }
+
+            var hasPassword = await _userManager.HasPasswordAsync(user);
+            if (hasPassword)
+            {
+                _toastNotification.AddErrorToastMessage("You Already have a password !!");
+                return RedirectToAction(nameof(Index), "Home");
+            }
+
+            return View(new SetPasswordViewModel());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SetPassword(SetPasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var user = await _userManager.GetUserAsync(User);
+            if (user is null)
+                return RedirectToAction(nameof(Login));
+
+            var result = await _userManager.AddPasswordAsync(user, model.NewPassword);
+            if (result.Succeeded)
+            {
+                _toastNotification.AddInfoToastMessage("You Set new Password Successfully !!");
+                return RedirectToAction("Index", "Home");
+            }
+
+            foreach (var error in result.Errors)
+                ModelState.AddModelError(string.Empty, error.Description);
 
             return View(model);
         }

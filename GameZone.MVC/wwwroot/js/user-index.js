@@ -21,7 +21,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: `/Admin/Users/Delete/${btn.data('id')}`,
+                    url: `/Users/Delete/${btn.data('id')}`,
                     method: 'DELETE',
                     success: function () {
                         swal.fire(

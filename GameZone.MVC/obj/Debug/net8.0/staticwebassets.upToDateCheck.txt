@@ -12,6 +12,7 @@ wwwroot\assets\img\games\bb5b058a-fba9-4b2e-b7de-6a7c770d84ae.jpeg
 wwwroot\assets\img\games\d29341b7-74aa-41e4-920c-787798055e37.jpeg
 wwwroot\assets\img\users\9abfc85c-981f-429b-a9c5-ed631e360955.jpeg
 wwwroot\assets\img\users\a62b0bb8-a92e-4a65-9d38-171296d628a0.jpeg
+wwwroot\assets\img\users\c1d183df-3d4c-4e05-9396-bfb6830fa8c1.jpeg
 wwwroot\bootstrap-icons\bootstrap-icons.svg
 wwwroot\bootstrap-icons\font\bootstrap-icons.css
 wwwroot\bootstrap-icons\font\bootstrap-icons.json

@@ -3,26 +3,28 @@ using GameZone.Services.Services.DevicesServices;
 using GameZone.Services.Services.GamesServices;
 using GameZone.Services.ViewModels.GamesVM;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using NToastNotify;
 
 namespace GameZone.MVC.Controllers
 {
-   
+
     public class GamesController : Controller
     {
         private readonly IGamesServices _gamesServices;
         private readonly ICategoriesServices _categoriesServices;
         private readonly IDevicesServices _devicesServices;
-        
+        private readonly IToastNotification _toastNotification;
 
-        public GamesController(IGamesServices gamesServices, 
+        public GamesController(IGamesServices gamesServices,
             ICategoriesServices categoriesServices,
-            IDevicesServices devicesServices)
+            IDevicesServices devicesServices,
+            IToastNotification toastNotification)
         {
             _gamesServices = gamesServices;
             _categoriesServices = categoriesServices;
             _devicesServices = devicesServices;
+            _toastNotification = toastNotification;
         }
 
         [HttpGet]
@@ -70,7 +72,7 @@ namespace GameZone.MVC.Controllers
                 return View(model);
             }
             await _gamesServices.Create(model);
-
+            _toastNotification.AddSuccessToastMessage("Game Created Successfully !!");
             return Redirect(nameof(Index));
         }
 
@@ -116,6 +118,7 @@ namespace GameZone.MVC.Controllers
             if (game is null)
                 return BadRequest();
 
+            _toastNotification.AddWarningToastMessage("Game Updated Successfully !!");
             return RedirectToAction(nameof(Index));
         }
 
@@ -128,6 +131,7 @@ namespace GameZone.MVC.Controllers
             if (game is null)
                 return BadRequest();
 
+            _toastNotification.AddErrorToastMessage("Game Deleted Successfully !!");
             return Ok();
         }
     }

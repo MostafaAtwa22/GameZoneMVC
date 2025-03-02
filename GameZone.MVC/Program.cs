@@ -8,6 +8,7 @@ using GameZone.Services.Services.GamesServices;
 using GameZone.Services.Services.ManageServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.Google;
+using NToastNotify;
 
 namespace GameZone.MVC
 {
@@ -30,6 +31,16 @@ namespace GameZone.MVC
             builder.Services.AddControllersWithViews();
             var constr = builder.Configuration.GetConnectionString("Default")
                 ?? throw new InvalidOperationException("No Connection String");
+
+            // Add services to the container.
+            builder.Services.AddControllersWithViews()
+                .AddNToastNotifyToastr(new ToastrOptions()
+                {
+                    ProgressBar = true,
+                    PositionClass = ToastPositions.TopRight,
+                    PreventDuplicates = true,
+                    CloseButton = true
+                });
 
             builder.Services.AddDbContext<ApplicationDbContext>(option =>
             {

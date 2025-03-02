@@ -1,7 +1,6 @@
 ﻿
 using AutoMapper;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 
 namespace GameZone.Services.Services.GamesServices
 {
@@ -57,34 +56,33 @@ namespace GameZone.Services.Services.GamesServices
             var hasNewCover = model.Cover is not null;
             var oldCover = game.Cover;
 
-            game.Name = model.Name;
-            game.Description = model.Description;
-            game.CategoryId = model.CategoryId;
-            game.GameDevices = model.SelectedDevices.Select(deviceId => new GameDevice { DeviceId = deviceId, GameId = game.Id }).ToList();
-
+            _mapper.Map(model, game);
 
             if (hasNewCover)
             {
                 game.Cover = await SaveCover(model.Cover!);
             }
+
             _unitOfWork.Games.Update(game);
+            var affectedRows = await _unitOfWork.Complete();
 
-            var effectedRows = await _unitOfWork.Complete();
-
-            if (effectedRows > 0)
+            if (affectedRows > 0)
             {
-                if (hasNewCover)
+                if (hasNewCover && !string.IsNullOrEmpty(oldCover))
                 {
-                    var cover = Path.Combine(_imagesPath, oldCover);
-                    File.Delete(cover);
+                    var coverPath = Path.Combine(_imagesPath, oldCover);
+                    File.Delete(coverPath);
                 }
 
                 return game;
             }
             else
             {
-                var cover = Path.Combine(_imagesPath, game.Cover);
-                File.Delete(cover);
+                if (hasNewCover && !string.IsNullOrEmpty(game.Cover))
+                {
+                    var coverPath = Path.Combine(_imagesPath, game.Cover);
+                    File.Delete(coverPath);
+                }
 
                 return null;
             }

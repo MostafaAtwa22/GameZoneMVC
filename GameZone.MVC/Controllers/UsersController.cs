@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using NToastNotify;
 using System.Security.Claims;
 
 namespace GameZone.MVC.Controllers
@@ -8,10 +9,14 @@ namespace GameZone.MVC.Controllers
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IToastNotification _toastNotification;
 
-        public UsersController(ApplicationDbContext context)
+        [ActivatorUtilitiesConstructor]
+        public UsersController(ApplicationDbContext context,
+            IToastNotification toastNotification)
         {
             _context = context;
+            _toastNotification = toastNotification;
         }
 
         [HttpGet]
@@ -37,9 +42,15 @@ namespace GameZone.MVC.Controllers
                 return NotFound();
 
             if (user.LockoutEnd is null || user.LockoutEnd < DateTime.Now)
+            {
+                _toastNotification.AddErrorToastMessage("The Account is Locked !!");
                 user.LockoutEnd = DateTime.Now.AddMonths(1);
+            }
             else
+            {
+                _toastNotification.AddSuccessToastMessage("You Release the Lock Successfully !!");
                 user.LockoutEnd = DateTime.Now;
+            }
 
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
@@ -55,6 +66,7 @@ namespace GameZone.MVC.Controllers
                 return Json(new { success = false, message = "User not found." });
             }
 
+            _toastNotification.AddErrorToastMessage("The user account Deleted Successfully !!");
             _context.ApplicationUsers.Remove(user);
             _context.SaveChanges();
 
